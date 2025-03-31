@@ -145,6 +145,16 @@
     </resources>
   </build>
 
+  <reporting> 
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.4.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
+
   <profiles>
     <!-- Development profile (active by default) -->
     <profile>
@@ -202,7 +212,7 @@
         </plugins>
       </build>
     </profile>
-    
+
     <!-- Production profile -->
     <profile>
       <id>prod</id>
