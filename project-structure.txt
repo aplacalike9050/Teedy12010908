@@ -1,0 +1,2102 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 4ACD-7012
+D:.
+│  .gitattributes
+│  .gitignore
+│  CODE_OF_CONDUCT.md
+│  COPYING
+│  docker-compose.yml
+│  Dockerfile
+│  docs.xml
+│  pom.xml
+│  project-structure.txt
+│  README.md
+│  
+├─data
+│  └─docs
+│      ├─log
+│      │      docs.log
+│      │      
+│      ├─storage
+│      │      031a2622-1b87-4f27-a17b-a260166fe777
+│      │      031a2622-1b87-4f27-a17b-a260166fe777_thumb
+│      │      031a2622-1b87-4f27-a17b-a260166fe777_web
+│      │      b5d78cf3-c35e-49d1-9646-1cdc03f4d9a3
+│      │      b5d78cf3-c35e-49d1-9646-1cdc03f4d9a3_thumb
+│      │      b5d78cf3-c35e-49d1-9646-1cdc03f4d9a3_web
+│      │      f71fb799-2ac1-4f48-925f-7723facddd42
+│      │      f71fb799-2ac1-4f48-925f-7723facddd42_thumb
+│      │      f71fb799-2ac1-4f48-925f-7723facddd42_web
+│      │      
+│      └─theme
+├─docs
+│      .gitkeep
+│      
+├─docs-android
+│  │  .gitignore
+│  │  build.gradle
+│  │  gradle.properties
+│  │  gradlew
+│  │  gradlew.bat
+│  │  settings.gradle
+│  │  
+│  ├─app
+│  │  │  .gitignore
+│  │  │  build.gradle
+│  │  │  proguard-rules.txt
+│  │  │  
+│  │  ├─libs
+│  │  │      tokenautocomplete-1.2.1.jar
+│  │  │      
+│  │  └─src
+│  │      └─main
+│  │          │  AndroidManifest.xml
+│  │          │  
+│  │          ├─java
+│  │          │  └─com
+│  │          │      └─sismics
+│  │          │          └─docs
+│  │          │              │  MainApplication.java
+│  │          │              │  
+│  │          │              ├─activity
+│  │          │              │      AuditLogActivity.java
+│  │          │              │      DocumentEditActivity.java
+│  │          │              │      DocumentViewActivity.java
+│  │          │              │      GroupProfileActivity.java
+│  │          │              │      LoginActivity.java
+│  │          │              │      MainActivity.java
+│  │          │              │      SettingsActivity.java
+│  │          │              │      UserProfileActivity.java
+│  │          │              │      
+│  │          │              ├─adapter
+│  │          │              │      AclListAdapter.java
+│  │          │              │      AuditLogListAdapter.java
+│  │          │              │      CommentListAdapter.java
+│  │          │              │      DocListAdapter.java
+│  │          │              │      FilePagerAdapter.java
+│  │          │              │      LanguageAdapter.java
+│  │          │              │      ShareListAdapter.java
+│  │          │              │      TagAutoCompleteAdapter.java
+│  │          │              │      TagListAdapter.java
+│  │          │              │      
+│  │          │              ├─event
+│  │          │              │      AdvancedSearchEvent.java
+│  │          │              │      CommentAddEvent.java
+│  │          │              │      CommentDeleteEvent.java
+│  │          │              │      DocumentAddEvent.java
+│  │          │              │      DocumentDeleteEvent.java
+│  │          │              │      DocumentEditEvent.java
+│  │          │              │      DocumentFullscreenEvent.java
+│  │          │              │      FileAddEvent.java
+│  │          │              │      FileDeleteEvent.java
+│  │          │              │      SearchEvent.java
+│  │          │              │      ShareDeleteEvent.java
+│  │          │              │      ShareSendEvent.java
+│  │          │              │      
+│  │          │              ├─fragment
+│  │          │              │      DocExportPdfFragment.java
+│  │          │              │      DocListFragment.java
+│  │          │              │      DocShareFragment.java
+│  │          │              │      SearchFragment.java
+│  │          │              │      SettingsFragment.java
+│  │          │              │      
+│  │          │              ├─listener
+│  │          │              │      CallbackListener.java
+│  │          │              │      HttpCallback.java
+│  │          │              │      RecyclerItemClickListener.java
+│  │          │              │      
+│  │          │              ├─model
+│  │          │              │  └─application
+│  │          │              │          ApplicationContext.java
+│  │          │              │          
+│  │          │              ├─provider
+│  │          │              │      RecentSuggestionsProvider.java
+│  │          │              │      
+│  │          │              ├─resource
+│  │          │              │  │  AuditLogResource.java
+│  │          │              │  │  BaseResource.java
+│  │          │              │  │  CommentResource.java
+│  │          │              │  │  DocumentResource.java
+│  │          │              │  │  FileResource.java
+│  │          │              │  │  ShareResource.java
+│  │          │              │  │  TagResource.java
+│  │          │              │  │  UserResource.java
+│  │          │              │  │  
+│  │          │              │  └─cookie
+│  │          │              │          PersistentCookieStore.java
+│  │          │              │          SerializableHttpCookie.java
+│  │          │              │          
+│  │          │              ├─service
+│  │          │              │      FileUploadService.java
+│  │          │              │      
+│  │          │              ├─ui
+│  │          │              │  │  ScrollingFABBehavior.java
+│  │          │              │  │  
+│  │          │              │  ├─form
+│  │          │              │  │  │  Validable.java
+│  │          │              │  │  │  Validator.java
+│  │          │              │  │  │  
+│  │          │              │  │  └─validator
+│  │          │              │  │          Alphanumeric.java
+│  │          │              │  │          Email.java
+│  │          │              │  │          Length.java
+│  │          │              │  │          Required.java
+│  │          │              │  │          ValidatorType.java
+│  │          │              │  │          
+│  │          │              │  └─view
+│  │          │              │          DatePickerView.java
+│  │          │              │          DividerItemDecoration.java
+│  │          │              │          EmptyRecyclerView.java
+│  │          │              │          FileViewPager.java
+│  │          │              │          NonScrollListView.java
+│  │          │              │          TagsCompleteTextView.java
+│  │          │              │          
+│  │          │              └─util
+│  │          │                      ApplicationUtil.java
+│  │          │                      DialogUtil.java
+│  │          │                      NetworkUtil.java
+│  │          │                      OkHttpUtil.java
+│  │          │                      PreferenceUtil.java
+│  │          │                      SearchQueryBuilder.java
+│  │          │                      SpannableUtil.java
+│  │          │                      
+│  │          └─res
+│  │              ├─drawable
+│  │              │      tag_autocomplete_token_bg.xml
+│  │              │      
+│  │              ├─drawable-xhdpi
+│  │              │      deu.png
+│  │              │      eng.png
+│  │              │      fra.png
+│  │              │      ic_add_white_24dp.png
+│  │              │      ic_assignment_grey600_24dp.png
+│  │              │      ic_assignment_grey600_48dp.png
+│  │              │      ic_comment_grey600_24dp.png
+│  │              │      ic_create_grey600_24dp.png
+│  │              │      ic_delete_grey600_24dp.png
+│  │              │      ic_description_grey600_24dp.png
+│  │              │      ic_done_white_24dp.png
+│  │              │      ic_file_download_grey600_24dp.png
+│  │              │      ic_file_upload_grey600_24dp.png
+│  │              │      ic_file_upload_white_24dp.png
+│  │              │      ic_folder_open_grey600_48dp.png
+│  │              │      ic_folder_shared_grey600_24dp.png
+│  │              │      ic_info_white_24dp.png
+│  │              │      ic_label_white_24dp.png
+│  │              │      ic_link_grey600_24dp.png
+│  │              │      ic_people_grey600_24dp.png
+│  │              │      ic_send_grey600_24dp.png
+│  │              │      ic_share_grey600_24dp.png
+│  │              │      ic_work_grey600_24dp.png
+│  │              │      pol.png
+│  │              │      
+│  │              ├─drawable-xxhdpi
+│  │              │      deu.png
+│  │              │      eng.png
+│  │              │      fra.png
+│  │              │      ic_add_white_24dp.png
+│  │              │      ic_assignment_grey600_24dp.png
+│  │              │      ic_assignment_grey600_48dp.png
+│  │              │      ic_comment_grey600_24dp.png
+│  │              │      ic_create_grey600_24dp.png
+│  │              │      ic_delete_grey600_24dp.png
+│  │              │      ic_description_grey600_24dp.png
+│  │              │      ic_done_white_24dp.png
+│  │              │      ic_file_download_grey600_24dp.png
+│  │              │      ic_file_upload_grey600_24dp.png
+│  │              │      ic_file_upload_white_24dp.png
+│  │              │      ic_folder_open_grey600_48dp.png
+│  │              │      ic_folder_shared_grey600_24dp.png
+│  │              │      ic_info_white_24dp.png
+│  │              │      ic_label_white_24dp.png
+│  │              │      ic_link_grey600_24dp.png
+│  │              │      ic_people_grey600_24dp.png
+│  │              │      ic_send_grey600_24dp.png
+│  │              │      ic_share_grey600_24dp.png
+│  │              │      ic_work_grey600_24dp.png
+│  │              │      
+│  │              ├─layout
+│  │              │      acl_list_item.xml
+│  │              │      auditlog_activity.xml
+│  │              │      auditlog_list_item.xml
+│  │              │      comment_list_item.xml
+│  │              │      document_edit_activity.xml
+│  │              │      document_export_pdf_dialog.xml
+│  │              │      document_share_dialog.xml
+│  │              │      document_view_activity.xml
+│  │              │      doc_list_fragment.xml
+│  │              │      doc_list_item.xml
+│  │              │      file_viewpager_item.xml
+│  │              │      groupprofile_activity.xml
+│  │              │      language_list_item.xml
+│  │              │      login_activity.xml
+│  │              │      main_activity.xml
+│  │              │      search_dialog.xml
+│  │              │      share_list_item.xml
+│  │              │      tag_autocomplete_item.xml
+│  │              │      tag_autocomplete_token.xml
+│  │              │      tag_list_item.xml
+│  │              │      userprofile_activity.xml
+│  │              │      
+│  │              ├─menu
+│  │              │      document_edit_activity.xml
+│  │              │      document_view_activity.xml
+│  │              │      main_activity.xml
+│  │              │      
+│  │              ├─mipmap-xhdpi
+│  │              │      ic_launcher.png
+│  │              │      
+│  │              ├─mipmap-xxhdpi
+│  │              │      ic_launcher.png
+│  │              │      
+│  │              ├─values
+│  │              │      arrays.xml
+│  │              │      colors.xml
+│  │              │      strings.xml
+│  │              │      styles.xml
+│  │              │      
+│  │              ├─values-de
+│  │              │      strings.xml
+│  │              │      
+│  │              ├─values-fr
+│  │              │      strings.xml
+│  │              │      
+│  │              ├─values-pl
+│  │              │      strings.xml
+│  │              │      
+│  │              └─xml
+│  │                      preferences.xml
+│  │                      searchable.xml
+│  │                      
+│  └─gradle
+│      └─wrapper
+│              gradle-wrapper.jar
+│              gradle-wrapper.properties
+│              
+├─docs-core
+│  │  pom.xml
+│  │  
+│  ├─src
+│  │  ├─dev
+│  │  │  └─resources
+│  │  │      └─db
+│  │  │          └─update
+│  │  │                  dbupdate-000-1.sql
+│  │  │                  
+│  │  ├─main
+│  │  │  ├─java
+│  │  │  │  ├─com
+│  │  │  │  │  └─sismics
+│  │  │  │  │      ├─docs
+│  │  │  │  │      │  └─core
+│  │  │  │  │      │      ├─constant
+│  │  │  │  │      │      │      AclTargetType.java
+│  │  │  │  │      │      │      AclType.java
+│  │  │  │  │      │      │      ActionType.java
+│  │  │  │  │      │      │      AuditLogType.java
+│  │  │  │  │      │      │      ConfigType.java
+│  │  │  │  │      │      │      Constants.java
+│  │  │  │  │      │      │      MetadataType.java
+│  │  │  │  │      │      │      PermType.java
+│  │  │  │  │      │      │      RouteStepTransition.java
+│  │  │  │  │      │      │      RouteStepType.java
+│  │  │  │  │      │      │      WebhookEvent.java
+│  │  │  │  │      │      │      
+│  │  │  │  │      │      ├─dao
+│  │  │  │  │      │      │  │  AclDao.java
+│  │  │  │  │      │      │  │  AuditLogDao.java
+│  │  │  │  │      │      │  │  AuthenticationTokenDao.java
+│  │  │  │  │      │      │  │  CommentDao.java
+│  │  │  │  │      │      │  │  ConfigDao.java
+│  │  │  │  │      │      │  │  ContributorDao.java
+│  │  │  │  │      │      │  │  DocumentDao.java
+│  │  │  │  │      │      │  │  DocumentMetadataDao.java
+│  │  │  │  │      │      │  │  FileDao.java
+│  │  │  │  │      │      │  │  GroupDao.java
+│  │  │  │  │      │      │  │  MetadataDao.java
+│  │  │  │  │      │      │  │  PasswordRecoveryDao.java
+│  │  │  │  │      │      │  │  RelationDao.java
+│  │  │  │  │      │      │  │  RoleBaseFunctionDao.java
+│  │  │  │  │      │      │  │  RouteDao.java
+│  │  │  │  │      │      │  │  RouteModelDao.java
+│  │  │  │  │      │      │  │  RouteStepDao.java
+│  │  │  │  │      │      │  │  ShareDao.java
+│  │  │  │  │      │      │  │  TagDao.java
+│  │  │  │  │      │      │  │  UserDao.java
+│  │  │  │  │      │      │  │  VocabularyDao.java
+│  │  │  │  │      │      │  │  WebhookDao.java
+│  │  │  │  │      │      │  │  
+│  │  │  │  │      │      │  ├─criteria
+│  │  │  │  │      │      │  │      AuditLogCriteria.java
+│  │  │  │  │      │      │  │      DocumentCriteria.java
+│  │  │  │  │      │      │  │      GroupCriteria.java
+│  │  │  │  │      │      │  │      MetadataCriteria.java
+│  │  │  │  │      │      │  │      RouteCriteria.java
+│  │  │  │  │      │      │  │      RouteModelCriteria.java
+│  │  │  │  │      │      │  │      RouteStepCriteria.java
+│  │  │  │  │      │      │  │      TagCriteria.java
+│  │  │  │  │      │      │  │      UserCriteria.java
+│  │  │  │  │      │      │  │      WebhookCriteria.java
+│  │  │  │  │      │      │  │      
+│  │  │  │  │      │      │  └─dto
+│  │  │  │  │      │      │          AclDto.java
+│  │  │  │  │      │      │          AuditLogDto.java
+│  │  │  │  │      │      │          CommentDto.java
+│  │  │  │  │      │      │          ContributorDto.java
+│  │  │  │  │      │      │          DocumentDto.java
+│  │  │  │  │      │      │          DocumentMetadataDto.java
+│  │  │  │  │      │      │          GroupDto.java
+│  │  │  │  │      │      │          MetadataDto.java
+│  │  │  │  │      │      │          RelationDto.java
+│  │  │  │  │      │      │          RouteDto.java
+│  │  │  │  │      │      │          RouteModelDto.java
+│  │  │  │  │      │      │          RouteStepDto.java
+│  │  │  │  │      │      │          TagDto.java
+│  │  │  │  │      │      │          UserDto.java
+│  │  │  │  │      │      │          WebhookDto.java
+│  │  │  │  │      │      │          
+│  │  │  │  │      │      ├─event
+│  │  │  │  │      │      │      AclCreatedAsyncEvent.java
+│  │  │  │  │      │      │      AclDeletedAsyncEvent.java
+│  │  │  │  │      │      │      AclEvent.java
+│  │  │  │  │      │      │      DocumentCreatedAsyncEvent.java
+│  │  │  │  │      │      │      DocumentDeletedAsyncEvent.java
+│  │  │  │  │      │      │      DocumentUpdatedAsyncEvent.java
+│  │  │  │  │      │      │      FileCreatedAsyncEvent.java
+│  │  │  │  │      │      │      FileDeletedAsyncEvent.java
+│  │  │  │  │      │      │      FileEvent.java
+│  │  │  │  │      │      │      FileUpdatedAsyncEvent.java
+│  │  │  │  │      │      │      PasswordLostEvent.java
+│  │  │  │  │      │      │      RebuildIndexAsyncEvent.java
+│  │  │  │  │      │      │      RouteStepValidateEvent.java
+│  │  │  │  │      │      │      UserEvent.java
+│  │  │  │  │      │      │      
+│  │  │  │  │      │      ├─listener
+│  │  │  │  │      │      │  └─async
+│  │  │  │  │      │      │          AclCreatedAsyncListener.java
+│  │  │  │  │      │      │          AclDeletedAsyncListener.java
+│  │  │  │  │      │      │          DocumentCreatedAsyncListener.java
+│  │  │  │  │      │      │          DocumentDeletedAsyncListener.java
+│  │  │  │  │      │      │          DocumentUpdatedAsyncListener.java
+│  │  │  │  │      │      │          FileDeletedAsyncListener.java
+│  │  │  │  │      │      │          FileProcessingAsyncListener.java
+│  │  │  │  │      │      │          PasswordLostAsyncListener.java
+│  │  │  │  │      │      │          RebuildIndexAsyncListener.java
+│  │  │  │  │      │      │          RouteStepValidateAsyncListener.java
+│  │  │  │  │      │      │          WebhookAsyncListener.java
+│  │  │  │  │      │      │          
+│  │  │  │  │      │      ├─model
+│  │  │  │  │      │      │  ├─context
+│  │  │  │  │      │      │  │      AppContext.java
+│  │  │  │  │      │      │  │      
+│  │  │  │  │      │      │  └─jpa
+│  │  │  │  │      │      │          Acl.java
+│  │  │  │  │      │      │          AuditLog.java
+│  │  │  │  │      │      │          AuthenticationToken.java
+│  │  │  │  │      │      │          BaseFunction.java
+│  │  │  │  │      │      │          Comment.java
+│  │  │  │  │      │      │          Config.java
+│  │  │  │  │      │      │          Contributor.java
+│  │  │  │  │      │      │          Document.java
+│  │  │  │  │      │      │          DocumentMetadata.java
+│  │  │  │  │      │      │          DocumentTag.java
+│  │  │  │  │      │      │          File.java
+│  │  │  │  │      │      │          Group.java
+│  │  │  │  │      │      │          Loggable.java
+│  │  │  │  │      │      │          Metadata.java
+│  │  │  │  │      │      │          PasswordRecovery.java
+│  │  │  │  │      │      │          Relation.java
+│  │  │  │  │      │      │          Role.java
+│  │  │  │  │      │      │          RoleBaseFunction.java
+│  │  │  │  │      │      │          Route.java
+│  │  │  │  │      │      │          RouteModel.java
+│  │  │  │  │      │      │          RouteStep.java
+│  │  │  │  │      │      │          Share.java
+│  │  │  │  │      │      │          Tag.java
+│  │  │  │  │      │      │          User.java
+│  │  │  │  │      │      │          UserGroup.java
+│  │  │  │  │      │      │          Vocabulary.java
+│  │  │  │  │      │      │          Webhook.java
+│  │  │  │  │      │      │          
+│  │  │  │  │      │      ├─service
+│  │  │  │  │      │      │      FileService.java
+│  │  │  │  │      │      │      FileSizeService.java
+│  │  │  │  │      │      │      InboxService.java
+│  │  │  │  │      │      │      
+│  │  │  │  │      │      └─util
+│  │  │  │  │      │          │  ActionUtil.java
+│  │  │  │  │      │          │  AuditLogUtil.java
+│  │  │  │  │      │          │  ConfigUtil.java
+│  │  │  │  │      │          │  DirectoryUtil.java
+│  │  │  │  │      │          │  DocumentUtil.java
+│  │  │  │  │      │          │  EncryptionUtil.java
+│  │  │  │  │      │          │  FileUtil.java
+│  │  │  │  │      │          │  MetadataUtil.java
+│  │  │  │  │      │          │  PdfUtil.java
+│  │  │  │  │      │          │  RoutingUtil.java
+│  │  │  │  │      │          │  SecurityUtil.java
+│  │  │  │  │      │          │  TransactionUtil.java
+│  │  │  │  │      │          │  
+│  │  │  │  │      │          ├─action
+│  │  │  │  │      │          │      Action.java
+│  │  │  │  │      │          │      AddTagAction.java
+│  │  │  │  │      │          │      ProcessFilesAction.java
+│  │  │  │  │      │          │      RemoveTagAction.java
+│  │  │  │  │      │          │      TagAction.java
+│  │  │  │  │      │          │      
+│  │  │  │  │      │          ├─authentication
+│  │  │  │  │      │          │      AuthenticationHandler.java
+│  │  │  │  │      │          │      AuthenticationUtil.java
+│  │  │  │  │      │          │      InternalAuthenticationHandler.java
+│  │  │  │  │      │          │      LdapAuthenticationHandler.java
+│  │  │  │  │      │          │      
+│  │  │  │  │      │          ├─format
+│  │  │  │  │      │          │      DocxFormatHandler.java
+│  │  │  │  │      │          │      FormatHandler.java
+│  │  │  │  │      │          │      FormatHandlerUtil.java
+│  │  │  │  │      │          │      ImageFormatHandler.java
+│  │  │  │  │      │          │      OdtFormatHandler.java
+│  │  │  │  │      │          │      PdfFormatHandler.java
+│  │  │  │  │      │          │      PptxFormatHandler.java
+│  │  │  │  │      │          │      TextPlainFormatHandler.java
+│  │  │  │  │      │          │      VideoFormatHandler.java
+│  │  │  │  │      │          │      
+│  │  │  │  │      │          ├─indexing
+│  │  │  │  │      │          │      IndexingHandler.java
+│  │  │  │  │      │          │      LuceneIndexingHandler.java
+│  │  │  │  │      │          │      
+│  │  │  │  │      │          ├─jpa
+│  │  │  │  │      │          │      PaginatedList.java
+│  │  │  │  │      │          │      PaginatedLists.java
+│  │  │  │  │      │          │      QueryParam.java
+│  │  │  │  │      │          │      QueryUtil.java
+│  │  │  │  │      │          │      SortCriteria.java
+│  │  │  │  │      │          │      
+│  │  │  │  │      │          └─pdf
+│  │  │  │  │      │                  PdfPage.java
+│  │  │  │  │      │                  
+│  │  │  │  │      └─util
+│  │  │  │  │          │  ClasspathScanner.java
+│  │  │  │  │          │  EmailUtil.java
+│  │  │  │  │          │  EnvironmentUtil.java
+│  │  │  │  │          │  HtmlToPlainText.java
+│  │  │  │  │          │  HttpUtil.java
+│  │  │  │  │          │  ImageDeskew.java
+│  │  │  │  │          │  ImageUtil.java
+│  │  │  │  │          │  JsonUtil.java
+│  │  │  │  │          │  LocaleUtil.java
+│  │  │  │  │          │  MessageUtil.java
+│  │  │  │  │          │  ResourceBundleModel.java
+│  │  │  │  │          │  ResourceUtil.java
+│  │  │  │  │          │  Scalr.java
+│  │  │  │  │          │  
+│  │  │  │  │          ├─context
+│  │  │  │  │          │      ThreadLocalContext.java
+│  │  │  │  │          │      
+│  │  │  │  │          ├─css
+│  │  │  │  │          │      Rule.java
+│  │  │  │  │          │      Selector.java
+│  │  │  │  │          │      
+│  │  │  │  │          ├─io
+│  │  │  │  │          │      InputStreamReaderThread.java
+│  │  │  │  │          │      
+│  │  │  │  │          ├─jpa
+│  │  │  │  │          │      DbOpenHelper.java
+│  │  │  │  │          │      DialectUtil.java
+│  │  │  │  │          │      EMF.java
+│  │  │  │  │          │      
+│  │  │  │  │          ├─log4j
+│  │  │  │  │          │      LogCriteria.java
+│  │  │  │  │          │      LogEntry.java
+│  │  │  │  │          │      MemoryAppender.java
+│  │  │  │  │          │      
+│  │  │  │  │          ├─mime
+│  │  │  │  │          │      MimeType.java
+│  │  │  │  │          │      MimeTypeUtil.java
+│  │  │  │  │          │      
+│  │  │  │  │          └─totp
+│  │  │  │  │                  GoogleAuthenticator.java
+│  │  │  │  │                  GoogleAuthenticatorConfig.java
+│  │  │  │  │                  GoogleAuthenticatorException.java
+│  │  │  │  │                  GoogleAuthenticatorKey.java
+│  │  │  │  │                  KeyRepresentation.java
+│  │  │  │  │                  ReseedingSecureRandom.java
+│  │  │  │  │                  
+│  │  │  │  └─org
+│  │  │  │      └─apache
+│  │  │  │          └─pdfbox
+│  │  │  │              └─pdmodel
+│  │  │  │                  └─font
+│  │  │  │                          DocsPDType1Font.java
+│  │  │  │                          
+│  │  │  └─resources
+│  │  │      │  config.properties
+│  │  │      │  messages.properties
+│  │  │      │  messages_de.properties
+│  │  │      │  messages_fr.properties
+│  │  │      │  messages_pl.properties
+│  │  │      │  messages_ru.properties
+│  │  │      │  messages_zh_CN.properties
+│  │  │      │  messages_zh_TW.properties
+│  │  │      │  
+│  │  │      ├─db
+│  │  │      │  └─update
+│  │  │      │          dbupdate-000-0.sql
+│  │  │      │          dbupdate-001-0.sql
+│  │  │      │          dbupdate-002-0.sql
+│  │  │      │          dbupdate-003-0.sql
+│  │  │      │          dbupdate-004-0.sql
+│  │  │      │          dbupdate-005-0.sql
+│  │  │      │          dbupdate-006-0.sql
+│  │  │      │          dbupdate-007-0.sql
+│  │  │      │          dbupdate-008-0.sql
+│  │  │      │          dbupdate-009-0.sql
+│  │  │      │          dbupdate-010-0.sql
+│  │  │      │          dbupdate-011-0.sql
+│  │  │      │          dbupdate-012-0.sql
+│  │  │      │          dbupdate-013-0.sql
+│  │  │      │          dbupdate-014-0.sql
+│  │  │      │          dbupdate-015-0.sql
+│  │  │      │          dbupdate-016-0.sql
+│  │  │      │          dbupdate-017-0.sql
+│  │  │      │          dbupdate-018-0.sql
+│  │  │      │          dbupdate-019-0.sql
+│  │  │      │          dbupdate-020-0.sql
+│  │  │      │          dbupdate-021-0.sql
+│  │  │      │          dbupdate-022-0.sql
+│  │  │      │          dbupdate-023-0.sql
+│  │  │      │          dbupdate-024-0.sql
+│  │  │      │          dbupdate-025-0.sql
+│  │  │      │          dbupdate-026-0.sql
+│  │  │      │          dbupdate-027-0.sql
+│  │  │      │          dbupdate-028-0.sql
+│  │  │      │          dbupdate-029-0.sql
+│  │  │      │          dbupdate-030-0.sql
+│  │  │      │          dbupdate-031-0.sql
+│  │  │      │          
+│  │  │      ├─email_template
+│  │  │      │  │  layout.ftl
+│  │  │      │  │  
+│  │  │      │  ├─password_recovery
+│  │  │      │  │      template.ftl
+│  │  │      │  │      
+│  │  │      │  └─route_step_validate
+│  │  │      │          template.ftl
+│  │  │      │          
+│  │  │      ├─fonts
+│  │  │      │      LiberationMono-Regular.ttf
+│  │  │      │      
+│  │  │      └─META-INF
+│  │  │              persistence.xml
+│  │  │              
+│  │  └─test
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─sismics
+│  │      │          │  BaseTest.java
+│  │      │          │  
+│  │      │          ├─docs
+│  │      │          │  │  BaseTransactionalTest.java
+│  │      │          │  │  
+│  │      │          │  └─core
+│  │      │          │      ├─dao
+│  │      │          │      │  └─jpa
+│  │      │          │      │          TestJpa.java
+│  │      │          │      │          
+│  │      │          │      ├─listener
+│  │      │          │      │  └─async
+│  │      │          │      │          FileDeletedAsyncListenerTest.java
+│  │      │          │      │          
+│  │      │          │      ├─service
+│  │      │          │      │      TestFileSizeService.java
+│  │      │          │      │      
+│  │      │          │      └─util
+│  │      │          │              TestEncryptUtil.java
+│  │      │          │              TestFileUtil.java
+│  │      │          │              
+│  │      │          └─util
+│  │      │              │  TestCss.java
+│  │      │              │  TestGoogleAuthenticator.java
+│  │      │              │  TestImageUtil.java
+│  │      │              │  TestMimeTypeUtil.java
+│  │      │              │  TestResourceUtil.java
+│  │      │              │  
+│  │      │              └─format
+│  │      │                      TestPdfFormatHandler.java
+│  │      │                      
+│  │      └─resources
+│  │          │  hibernate.properties
+│  │          │  log4j.properties
+│  │          │  
+│  │          └─file
+│  │                  apache.pptx
+│  │                  apollo_landscape.jpg
+│  │                  apollo_portrait.jpg
+│  │                  document.csv
+│  │                  document.docx
+│  │                  document.odt
+│  │                  document.txt
+│  │                  document.xlsx
+│  │                  document.zip
+│  │                  image.gif
+│  │                  image.png
+│  │                  issue373.pdf
+│  │                  scanned.pdf
+│  │                  udhr.pdf
+│  │                  udhr_encrypted.pdf
+│  │                  video.mp4
+│  │                  video.webm
+│  │                  
+│  └─target
+│      │  docs-core-1.12-SNAPSHOT.jar
+│      │  
+│      ├─classes
+│      │  │  config.properties
+│      │  │  messages.properties
+│      │  │  messages_de.properties
+│      │  │  messages_fr.properties
+│      │  │  messages_pl.properties
+│      │  │  messages_ru.properties
+│      │  │  messages_zh_CN.properties
+│      │  │  messages_zh_TW.properties
+│      │  │  
+│      │  ├─com
+│      │  │  └─sismics
+│      │  │      ├─docs
+│      │  │      │  └─core
+│      │  │      │      ├─constant
+│      │  │      │      │      AclTargetType.class
+│      │  │      │      │      AclType.class
+│      │  │      │      │      ActionType.class
+│      │  │      │      │      AuditLogType.class
+│      │  │      │      │      ConfigType.class
+│      │  │      │      │      Constants.class
+│      │  │      │      │      MetadataType.class
+│      │  │      │      │      PermType.class
+│      │  │      │      │      RouteStepTransition.class
+│      │  │      │      │      RouteStepType.class
+│      │  │      │      │      WebhookEvent.class
+│      │  │      │      │      
+│      │  │      │      ├─dao
+│      │  │      │      │  │  AclDao.class
+│      │  │      │      │  │  AuditLogDao.class
+│      │  │      │      │  │  AuthenticationTokenDao.class
+│      │  │      │      │  │  CommentDao.class
+│      │  │      │      │  │  ConfigDao.class
+│      │  │      │      │  │  ContributorDao.class
+│      │  │      │      │  │  DocumentDao.class
+│      │  │      │      │  │  DocumentMetadataDao.class
+│      │  │      │      │  │  FileDao.class
+│      │  │      │      │  │  GroupDao.class
+│      │  │      │      │  │  MetadataDao.class
+│      │  │      │      │  │  PasswordRecoveryDao.class
+│      │  │      │      │  │  RelationDao.class
+│      │  │      │      │  │  RoleBaseFunctionDao.class
+│      │  │      │      │  │  RouteDao.class
+│      │  │      │      │  │  RouteModelDao.class
+│      │  │      │      │  │  RouteStepDao.class
+│      │  │      │      │  │  ShareDao.class
+│      │  │      │      │  │  TagDao.class
+│      │  │      │      │  │  UserDao.class
+│      │  │      │      │  │  VocabularyDao.class
+│      │  │      │      │  │  WebhookDao.class
+│      │  │      │      │  │  
+│      │  │      │      │  ├─criteria
+│      │  │      │      │  │      AuditLogCriteria.class
+│      │  │      │      │  │      DocumentCriteria.class
+│      │  │      │      │  │      GroupCriteria.class
+│      │  │      │      │  │      MetadataCriteria.class
+│      │  │      │      │  │      RouteCriteria.class
+│      │  │      │      │  │      RouteModelCriteria.class
+│      │  │      │      │  │      RouteStepCriteria.class
+│      │  │      │      │  │      TagCriteria.class
+│      │  │      │      │  │      UserCriteria.class
+│      │  │      │      │  │      WebhookCriteria.class
+│      │  │      │      │  │      
+│      │  │      │      │  └─dto
+│      │  │      │      │          AclDto.class
+│      │  │      │      │          AuditLogDto.class
+│      │  │      │      │          CommentDto.class
+│      │  │      │      │          ContributorDto.class
+│      │  │      │      │          DocumentDto.class
+│      │  │      │      │          DocumentMetadataDto.class
+│      │  │      │      │          GroupDto.class
+│      │  │      │      │          MetadataDto.class
+│      │  │      │      │          RelationDto.class
+│      │  │      │      │          RouteDto.class
+│      │  │      │      │          RouteModelDto.class
+│      │  │      │      │          RouteStepDto.class
+│      │  │      │      │          TagDto.class
+│      │  │      │      │          UserDto.class
+│      │  │      │      │          WebhookDto.class
+│      │  │      │      │          
+│      │  │      │      ├─event
+│      │  │      │      │      AclCreatedAsyncEvent.class
+│      │  │      │      │      AclDeletedAsyncEvent.class
+│      │  │      │      │      AclEvent.class
+│      │  │      │      │      DocumentCreatedAsyncEvent.class
+│      │  │      │      │      DocumentDeletedAsyncEvent.class
+│      │  │      │      │      DocumentUpdatedAsyncEvent.class
+│      │  │      │      │      FileCreatedAsyncEvent.class
+│      │  │      │      │      FileDeletedAsyncEvent.class
+│      │  │      │      │      FileEvent.class
+│      │  │      │      │      FileUpdatedAsyncEvent.class
+│      │  │      │      │      PasswordLostEvent.class
+│      │  │      │      │      RebuildIndexAsyncEvent.class
+│      │  │      │      │      RouteStepValidateEvent.class
+│      │  │      │      │      UserEvent.class
+│      │  │      │      │      
+│      │  │      │      ├─listener
+│      │  │      │      │  └─async
+│      │  │      │      │          AclCreatedAsyncListener.class
+│      │  │      │      │          AclDeletedAsyncListener.class
+│      │  │      │      │          DocumentCreatedAsyncListener.class
+│      │  │      │      │          DocumentDeletedAsyncListener.class
+│      │  │      │      │          DocumentUpdatedAsyncListener.class
+│      │  │      │      │          FileDeletedAsyncListener.class
+│      │  │      │      │          FileProcessingAsyncListener.class
+│      │  │      │      │          PasswordLostAsyncListener.class
+│      │  │      │      │          RebuildIndexAsyncListener.class
+│      │  │      │      │          RouteStepValidateAsyncListener.class
+│      │  │      │      │          WebhookAsyncListener.class
+│      │  │      │      │          
+│      │  │      │      ├─model
+│      │  │      │      │  ├─context
+│      │  │      │      │  │      AppContext.class
+│      │  │      │      │  │      
+│      │  │      │      │  └─jpa
+│      │  │      │      │          Acl.class
+│      │  │      │      │          AuditLog.class
+│      │  │      │      │          AuthenticationToken.class
+│      │  │      │      │          BaseFunction.class
+│      │  │      │      │          Comment.class
+│      │  │      │      │          Config.class
+│      │  │      │      │          Contributor.class
+│      │  │      │      │          Document.class
+│      │  │      │      │          DocumentMetadata.class
+│      │  │      │      │          DocumentTag.class
+│      │  │      │      │          File.class
+│      │  │      │      │          Group.class
+│      │  │      │      │          Loggable.class
+│      │  │      │      │          Metadata.class
+│      │  │      │      │          PasswordRecovery.class
+│      │  │      │      │          Relation.class
+│      │  │      │      │          Role.class
+│      │  │      │      │          RoleBaseFunction.class
+│      │  │      │      │          Route.class
+│      │  │      │      │          RouteModel.class
+│      │  │      │      │          RouteStep.class
+│      │  │      │      │          Share.class
+│      │  │      │      │          Tag.class
+│      │  │      │      │          User.class
+│      │  │      │      │          UserGroup.class
+│      │  │      │      │          Vocabulary.class
+│      │  │      │      │          Webhook.class
+│      │  │      │      │          
+│      │  │      │      ├─service
+│      │  │      │      │      FileService$TemporaryPathReference.class
+│      │  │      │      │      FileService.class
+│      │  │      │      │      FileSizeService.class
+│      │  │      │      │      InboxService.class
+│      │  │      │      │      
+│      │  │      │      └─util
+│      │  │      │          │  ActionUtil$1.class
+│      │  │      │          │  ActionUtil.class
+│      │  │      │          │  AuditLogUtil.class
+│      │  │      │          │  ConfigUtil.class
+│      │  │      │          │  DirectoryUtil.class
+│      │  │      │          │  DocumentUtil.class
+│      │  │      │          │  EncryptionUtil.class
+│      │  │      │          │  FileUtil.class
+│      │  │      │          │  MetadataUtil$1.class
+│      │  │      │          │  MetadataUtil.class
+│      │  │      │          │  PdfUtil.class
+│      │  │      │          │  RoutingUtil$1.class
+│      │  │      │          │  RoutingUtil.class
+│      │  │      │          │  SecurityUtil$1.class
+│      │  │      │          │  SecurityUtil.class
+│      │  │      │          │  TransactionUtil.class
+│      │  │      │          │  
+│      │  │      │          ├─action
+│      │  │      │          │      Action.class
+│      │  │      │          │      AddTagAction.class
+│      │  │      │          │      ProcessFilesAction.class
+│      │  │      │          │      RemoveTagAction.class
+│      │  │      │          │      TagAction.class
+│      │  │      │          │      
+│      │  │      │          ├─authentication
+│      │  │      │          │      AuthenticationHandler.class
+│      │  │      │          │      AuthenticationUtil.class
+│      │  │      │          │      InternalAuthenticationHandler.class
+│      │  │      │          │      LdapAuthenticationHandler.class
+│      │  │      │          │      
+│      │  │      │          ├─format
+│      │  │      │          │      DocxFormatHandler.class
+│      │  │      │          │      FormatHandler.class
+│      │  │      │          │      FormatHandlerUtil.class
+│      │  │      │          │      ImageFormatHandler.class
+│      │  │      │          │      OdtFormatHandler.class
+│      │  │      │          │      PdfFormatHandler.class
+│      │  │      │          │      PptxFormatHandler.class
+│      │  │      │          │      TextPlainFormatHandler.class
+│      │  │      │          │      VideoFormatHandler.class
+│      │  │      │          │      
+│      │  │      │          ├─indexing
+│      │  │      │          │      IndexingHandler.class
+│      │  │      │          │      LuceneIndexingHandler$LuceneRunnable.class
+│      │  │      │          │      LuceneIndexingHandler.class
+│      │  │      │          │      
+│      │  │      │          ├─jpa
+│      │  │      │          │      PaginatedList.class
+│      │  │      │          │      PaginatedLists.class
+│      │  │      │          │      QueryParam.class
+│      │  │      │          │      QueryUtil.class
+│      │  │      │          │      SortCriteria.class
+│      │  │      │          │      
+│      │  │      │          └─pdf
+│      │  │      │                  PdfPage.class
+│      │  │      │                  
+│      │  │      └─util
+│      │  │          │  ClasspathScanner$Priority.class
+│      │  │          │  ClasspathScanner.class
+│      │  │          │  EmailUtil$FileContent.class
+│      │  │          │  EmailUtil$MailContent.class
+│      │  │          │  EmailUtil.class
+│      │  │          │  EnvironmentUtil.class
+│      │  │          │  HtmlToPlainText$FormattingVisitor.class
+│      │  │          │  HtmlToPlainText.class
+│      │  │          │  HttpUtil.class
+│      │  │          │  ImageDeskew$HoughLine.class
+│      │  │          │  ImageDeskew.class
+│      │  │          │  ImageUtil.class
+│      │  │          │  JsonUtil.class
+│      │  │          │  LocaleUtil.class
+│      │  │          │  MessageUtil.class
+│      │  │          │  ResourceBundleModel.class
+│      │  │          │  ResourceUtil.class
+│      │  │          │  Scalr.class
+│      │  │          │  
+│      │  │          ├─context
+│      │  │          │      ThreadLocalContext.class
+│      │  │          │      
+│      │  │          ├─css
+│      │  │          │      Rule.class
+│      │  │          │      Selector.class
+│      │  │          │      
+│      │  │          ├─io
+│      │  │          │      InputStreamReaderThread.class
+│      │  │          │      
+│      │  │          ├─jpa
+│      │  │          │      DbOpenHelper.class
+│      │  │          │      DialectUtil.class
+│      │  │          │      EMF$1.class
+│      │  │          │      EMF.class
+│      │  │          │      
+│      │  │          ├─log4j
+│      │  │          │      LogCriteria.class
+│      │  │          │      LogEntry.class
+│      │  │          │      MemoryAppender.class
+│      │  │          │      
+│      │  │          ├─mime
+│      │  │          │      MimeType.class
+│      │  │          │      MimeTypeUtil.class
+│      │  │          │      
+│      │  │          └─totp
+│      │  │                  GoogleAuthenticator$1.class
+│      │  │                  GoogleAuthenticator.class
+│      │  │                  GoogleAuthenticatorConfig$GoogleAuthenticatorConfigBuilder.class
+│      │  │                  GoogleAuthenticatorConfig.class
+│      │  │                  GoogleAuthenticatorException.class
+│      │  │                  GoogleAuthenticatorKey.class
+│      │  │                  KeyRepresentation.class
+│      │  │                  ReseedingSecureRandom.class
+│      │  │                  
+│      │  ├─db
+│      │  │  └─update
+│      │  │          dbupdate-000-0.sql
+│      │  │          dbupdate-000-1.sql
+│      │  │          dbupdate-001-0.sql
+│      │  │          dbupdate-002-0.sql
+│      │  │          dbupdate-003-0.sql
+│      │  │          dbupdate-004-0.sql
+│      │  │          dbupdate-005-0.sql
+│      │  │          dbupdate-006-0.sql
+│      │  │          dbupdate-007-0.sql
+│      │  │          dbupdate-008-0.sql
+│      │  │          dbupdate-009-0.sql
+│      │  │          dbupdate-010-0.sql
+│      │  │          dbupdate-011-0.sql
+│      │  │          dbupdate-012-0.sql
+│      │  │          dbupdate-013-0.sql
+│      │  │          dbupdate-014-0.sql
+│      │  │          dbupdate-015-0.sql
+│      │  │          dbupdate-016-0.sql
+│      │  │          dbupdate-017-0.sql
+│      │  │          dbupdate-018-0.sql
+│      │  │          dbupdate-019-0.sql
+│      │  │          dbupdate-020-0.sql
+│      │  │          dbupdate-021-0.sql
+│      │  │          dbupdate-022-0.sql
+│      │  │          dbupdate-023-0.sql
+│      │  │          dbupdate-024-0.sql
+│      │  │          dbupdate-025-0.sql
+│      │  │          dbupdate-026-0.sql
+│      │  │          dbupdate-027-0.sql
+│      │  │          dbupdate-028-0.sql
+│      │  │          dbupdate-029-0.sql
+│      │  │          dbupdate-030-0.sql
+│      │  │          dbupdate-031-0.sql
+│      │  │          
+│      │  ├─email_template
+│      │  │  │  layout.ftl
+│      │  │  │  
+│      │  │  ├─password_recovery
+│      │  │  │      template.ftl
+│      │  │  │      
+│      │  │  └─route_step_validate
+│      │  │          template.ftl
+│      │  │          
+│      │  ├─fonts
+│      │  │      LiberationMono-Regular.ttf
+│      │  │      
+│      │  ├─META-INF
+│      │  │      persistence.xml
+│      │  │      
+│      │  └─org
+│      │      └─apache
+│      │          └─pdfbox
+│      │              └─pdmodel
+│      │                  └─font
+│      │                          DocsPDType1Font.class
+│      │                          
+│      ├─generated-sources
+│      │  └─annotations
+│      ├─generated-test-sources
+│      │  └─test-annotations
+│      ├─maven-archiver
+│      │      pom.properties
+│      │      
+│      ├─maven-status
+│      │  └─maven-compiler-plugin
+│      │      ├─compile
+│      │      │  └─default-compile
+│      │      │          createdFiles.lst
+│      │      │          inputFiles.lst
+│      │      │          
+│      │      └─testCompile
+│      │          └─default-testCompile
+│      │                  createdFiles.lst
+│      │                  inputFiles.lst
+│      │                  
+│      └─test-classes
+│          │  hibernate.properties
+│          │  log4j.properties
+│          │  
+│          ├─com
+│          │  └─sismics
+│          │      │  BaseTest.class
+│          │      │  
+│          │      ├─docs
+│          │      │  │  BaseTransactionalTest.class
+│          │      │  │  
+│          │      │  └─core
+│          │      │      ├─dao
+│          │      │      │  └─jpa
+│          │      │      │          TestJpa.class
+│          │      │      │          
+│          │      │      ├─listener
+│          │      │      │  └─async
+│          │      │      │          FileDeletedAsyncListenerTest.class
+│          │      │      │          
+│          │      │      ├─service
+│          │      │      │      TestFileSizeService.class
+│          │      │      │      
+│          │      │      └─util
+│          │      │              TestEncryptUtil.class
+│          │      │              TestFileUtil.class
+│          │      │              
+│          │      └─util
+│          │          │  TestCss.class
+│          │          │  TestGoogleAuthenticator.class
+│          │          │  TestImageUtil.class
+│          │          │  TestMimeTypeUtil.class
+│          │          │  TestResourceUtil.class
+│          │          │  
+│          │          └─format
+│          │                  TestPdfFormatHandler.class
+│          │                  
+│          └─file
+│                  apache.pptx
+│                  apollo_landscape.jpg
+│                  apollo_portrait.jpg
+│                  document.csv
+│                  document.docx
+│                  document.odt
+│                  document.txt
+│                  document.xlsx
+│                  document.zip
+│                  image.gif
+│                  image.png
+│                  issue373.pdf
+│                  scanned.pdf
+│                  udhr.pdf
+│                  udhr_encrypted.pdf
+│                  video.mp4
+│                  video.webm
+│                  
+├─docs-importer
+│      Dockerfile
+│      env.sh
+│      main.js
+│      package-lock.json
+│      package.json
+│      pref
+│      README.md
+│      SismicsDocs.ico
+│      
+├─docs-web
+│  │  pom.xml
+│  │  
+│  ├─src
+│  │  ├─data
+│  │  ├─dev
+│  │  │  ├─main
+│  │  │  │  └─webapp
+│  │  │  │          web-override.xml
+│  │  │  │          
+│  │  │  └─resources
+│  │  │          config.properties
+│  │  │          hibernate.properties
+│  │  │          log4j.properties
+│  │  │          
+│  │  ├─main
+│  │  │  ├─java
+│  │  │  │  └─com
+│  │  │  │      └─sismics
+│  │  │  │          └─docs
+│  │  │  │              └─rest
+│  │  │  │                  ├─constant
+│  │  │  │                  │      BaseFunction.java
+│  │  │  │                  │      
+│  │  │  │                  ├─resource
+│  │  │  │                  │      AclResource.java
+│  │  │  │                  │      AppResource.java
+│  │  │  │                  │      AuditLogResource.java
+│  │  │  │                  │      BaseResource.java
+│  │  │  │                  │      CommentResource.java
+│  │  │  │                  │      DocsMessageBodyWriter.java
+│  │  │  │                  │      DocumentResource.java
+│  │  │  │                  │      FileResource.java
+│  │  │  │                  │      GroupResource.java
+│  │  │  │                  │      MetadataResource.java
+│  │  │  │                  │      RouteModelResource.java
+│  │  │  │                  │      RouteResource.java
+│  │  │  │                  │      ShareResource.java
+│  │  │  │                  │      TagResource.java
+│  │  │  │                  │      ThemeResource.java
+│  │  │  │                  │      UserResource.java
+│  │  │  │                  │      VocabularyResource.java
+│  │  │  │                  │      WebhookResource.java
+│  │  │  │                  │      
+│  │  │  │                  └─util
+│  │  │  │                          DocumentSearchCriteriaUtil.java
+│  │  │  │                          TagUtil.java
+│  │  │  │                          
+│  │  │  ├─resources
+│  │  │  │  └─image
+│  │  │  │          background.jpg
+│  │  │  │          file-thumb.png
+│  │  │  │          file-web.png
+│  │  │  │          logo.png
+│  │  │  │          
+│  │  │  └─webapp
+│  │  │      │  .gitignore
+│  │  │      │  Gruntfile.js
+│  │  │      │  header.md
+│  │  │      │  package-lock.json
+│  │  │      │  package.json
+│  │  │      │  
+│  │  │      ├─src
+│  │  │      │  │  index.html
+│  │  │      │  │  manifest.json
+│  │  │      │  │  share.html
+│  │  │      │  │  
+│  │  │      │  ├─app
+│  │  │      │  │  ├─docs
+│  │  │      │  │  │  │  app.js
+│  │  │      │  │  │  │  
+│  │  │      │  │  │  ├─controller
+│  │  │      │  │  │  │  │  Footer.js
+│  │  │      │  │  │  │  │  Login.js
+│  │  │      │  │  │  │  │  Main.js
+│  │  │      │  │  │  │  │  ModalFeedback.js
+│  │  │      │  │  │  │  │  ModalImport.js
+│  │  │      │  │  │  │  │  ModalPasswordLost.js
+│  │  │      │  │  │  │  │  Navigation.js
+│  │  │      │  │  │  │  │  PasswordReset.js
+│  │  │      │  │  │  │  │  
+│  │  │      │  │  │  │  ├─document
+│  │  │      │  │  │  │  │      Document.js
+│  │  │      │  │  │  │  │      DocumentDefault.js
+│  │  │      │  │  │  │  │      DocumentEdit.js
+│  │  │      │  │  │  │  │      DocumentModalAddTag.js
+│  │  │      │  │  │  │  │      DocumentModalPdf.js
+│  │  │      │  │  │  │  │      DocumentModalShare.js
+│  │  │      │  │  │  │  │      DocumentView.js
+│  │  │      │  │  │  │  │      DocumentViewActivity.js
+│  │  │      │  │  │  │  │      DocumentViewContent.js
+│  │  │      │  │  │  │  │      DocumentViewPermissions.js
+│  │  │      │  │  │  │  │      DocumentViewWorkflow.js
+│  │  │      │  │  │  │  │      FileModalView.js
+│  │  │      │  │  │  │  │      FileRename.js
+│  │  │      │  │  │  │  │      FileView.js
+│  │  │      │  │  │  │  │      ModalFileVersions.js
+│  │  │      │  │  │  │  │      
+│  │  │      │  │  │  │  ├─settings
+│  │  │      │  │  │  │  │      Settings.js
+│  │  │      │  │  │  │  │      SettingsAccount.js
+│  │  │      │  │  │  │  │      SettingsConfig.js
+│  │  │      │  │  │  │  │      SettingsDefault.js
+│  │  │      │  │  │  │  │      SettingsGroup.js
+│  │  │      │  │  │  │  │      SettingsGroupEdit.js
+│  │  │      │  │  │  │  │      SettingsInbox.js
+│  │  │      │  │  │  │  │      SettingsLdap.js
+│  │  │      │  │  │  │  │      SettingsMetadata.js
+│  │  │      │  │  │  │  │      SettingsMonitoring.js
+│  │  │      │  │  │  │  │      SettingsSecurity.js
+│  │  │      │  │  │  │  │      SettingsSecurityModalDisableTotp.js
+│  │  │      │  │  │  │  │      SettingsSession.js
+│  │  │      │  │  │  │  │      SettingsUser.js
+│  │  │      │  │  │  │  │      SettingsUserEdit.js
+│  │  │      │  │  │  │  │      SettingsVocabulary.js
+│  │  │      │  │  │  │  │      SettingsWorkflow.js
+│  │  │      │  │  │  │  │      SettingsWorkflowEdit.js
+│  │  │      │  │  │  │  │      
+│  │  │      │  │  │  │  ├─tag
+│  │  │      │  │  │  │  │      Tag.js
+│  │  │      │  │  │  │  │      TagEdit.js
+│  │  │      │  │  │  │  │      
+│  │  │      │  │  │  │  └─usergroup
+│  │  │      │  │  │  │          GroupProfile.js
+│  │  │      │  │  │  │          UserGroup.js
+│  │  │      │  │  │  │          UserProfile.js
+│  │  │      │  │  │  │          
+│  │  │      │  │  │  ├─directive
+│  │  │      │  │  │  │      Acl.js
+│  │  │      │  │  │  │      AclEdit.js
+│  │  │      │  │  │  │      AddSpaceBetween.js
+│  │  │      │  │  │  │      AuditLog.js
+│  │  │      │  │  │  │      ImgError.js
+│  │  │      │  │  │  │      InvertTextColor.js
+│  │  │      │  │  │  │      Pell.js
+│  │  │      │  │  │  │      SelectRelation.js
+│  │  │      │  │  │  │      SelectTag.js
+│  │  │      │  │  │  │      
+│  │  │      │  │  │  ├─filter
+│  │  │      │  │  │  │      Filesize.js
+│  │  │      │  │  │  │      
+│  │  │      │  │  │  └─service
+│  │  │      │  │  │          User.js
+│  │  │      │  │  │          
+│  │  │      │  │  └─share
+│  │  │      │  │      │  app.js
+│  │  │      │  │      │  
+│  │  │      │  │      ├─controller
+│  │  │      │  │      │      FileModalView.js
+│  │  │      │  │      │      FileView.js
+│  │  │      │  │      │      Footer.js
+│  │  │      │  │      │      Main.js
+│  │  │      │  │      │      Share.js
+│  │  │      │  │      │      ShareModalPdf.js
+│  │  │      │  │      │      
+│  │  │      │  │      └─filter
+│  │  │      │  │              Filesize.js
+│  │  │      │  │              
+│  │  │      │  ├─fonts
+│  │  │      │  │      fa-brands-400.eot
+│  │  │      │  │      fa-brands-400.svg
+│  │  │      │  │      fa-brands-400.ttf
+│  │  │      │  │      fa-brands-400.woff
+│  │  │      │  │      fa-brands-400.woff2
+│  │  │      │  │      fa-regular-400.eot
+│  │  │      │  │      fa-regular-400.svg
+│  │  │      │  │      fa-regular-400.ttf
+│  │  │      │  │      fa-regular-400.woff
+│  │  │      │  │      fa-regular-400.woff2
+│  │  │      │  │      fa-solid-900.eot
+│  │  │      │  │      fa-solid-900.svg
+│  │  │      │  │      fa-solid-900.ttf
+│  │  │      │  │      fa-solid-900.woff
+│  │  │      │  │      fa-solid-900.woff2
+│  │  │      │  │      
+│  │  │      │  ├─img
+│  │  │      │  │  │  alpha.png
+│  │  │      │  │  │  glyphicons-halflings-white.png
+│  │  │      │  │  │  glyphicons-halflings.png
+│  │  │      │  │  │  hue.png
+│  │  │      │  │  │  saturation.png
+│  │  │      │  │  │  title.png
+│  │  │      │  │  │  
+│  │  │      │  │  └─icons
+│  │  │      │  │          icon-128x128.png
+│  │  │      │  │          icon-144x144.png
+│  │  │      │  │          icon-152x152.png
+│  │  │      │  │          icon-192x192.png
+│  │  │      │  │          icon-384x384.png
+│  │  │      │  │          icon-512x512.png
+│  │  │      │  │          icon-72x72.png
+│  │  │      │  │          icon-96x96.png
+│  │  │      │  │          
+│  │  │      │  ├─lib
+│  │  │      │  │      angular.colorpicker.js
+│  │  │      │  │      angular.file-upload.js
+│  │  │      │  │      angular.js
+│  │  │      │  │      angular.ng-onboarding.js
+│  │  │      │  │      angular.ngprogress.js
+│  │  │      │  │      angular.qrcode.js
+│  │  │      │  │      angular.restangular.js
+│  │  │      │  │      angular.sanitize.js
+│  │  │      │  │      angular.timeago.js
+│  │  │      │  │      angular.tmhDynamicLocale.js
+│  │  │      │  │      angular.touch.js
+│  │  │      │  │      angular.translate.js
+│  │  │      │  │      angular.ui-bootstrap.js
+│  │  │      │  │      angular.ui-router.js
+│  │  │      │  │      angular.ui-sortable.js
+│  │  │      │  │      angular.ui-validate.js
+│  │  │      │  │      colorpicker.js
+│  │  │      │  │      jquery.js
+│  │  │      │  │      jquery.ui.js
+│  │  │      │  │      less.js
+│  │  │      │  │      pell.js
+│  │  │      │  │      underscore.js
+│  │  │      │  │      
+│  │  │      │  ├─locale
+│  │  │      │  │      angular-locale_de.js
+│  │  │      │  │      angular-locale_el.js
+│  │  │      │  │      angular-locale_en.js
+│  │  │      │  │      angular-locale_es.js
+│  │  │      │  │      angular-locale_fr.js
+│  │  │      │  │      angular-locale_it.js
+│  │  │      │  │      angular-locale_pl.js
+│  │  │      │  │      angular-locale_pt.js
+│  │  │      │  │      angular-locale_ru.js
+│  │  │      │  │      angular-locale_sq_AL.js
+│  │  │      │  │      angular-locale_zh_CN.js
+│  │  │      │  │      angular-locale_zh_TW.js
+│  │  │      │  │      de.json
+│  │  │      │  │      el.json
+│  │  │      │  │      en.json
+│  │  │      │  │      es.json
+│  │  │      │  │      fr.json
+│  │  │      │  │      it.json
+│  │  │      │  │      pl.json
+│  │  │      │  │      pt.json
+│  │  │      │  │      ru.json
+│  │  │      │  │      sq_AL.json
+│  │  │      │  │      zh_CN.json
+│  │  │      │  │      zh_TW.json
+│  │  │      │  │      
+│  │  │      │  ├─partial
+│  │  │      │  │  ├─docs
+│  │  │      │  │  │      directive.acledit.html
+│  │  │      │  │  │      directive.auditlog.html
+│  │  │      │  │  │      directive.selectionrelation.typeahead.html
+│  │  │      │  │  │      directive.selectrelation.html
+│  │  │      │  │  │      directive.selecttag.html
+│  │  │      │  │  │      directive.typeahead.acl.html
+│  │  │      │  │  │      document.add.tag.html
+│  │  │      │  │  │      document.default.html
+│  │  │      │  │  │      document.edit.html
+│  │  │      │  │  │      document.html
+│  │  │      │  │  │      document.pdf.html
+│  │  │      │  │  │      document.share.html
+│  │  │      │  │  │      document.view.activity.html
+│  │  │      │  │  │      document.view.content.html
+│  │  │      │  │  │      document.view.html
+│  │  │      │  │  │      document.view.permissions.html
+│  │  │      │  │  │      document.view.workflow.html
+│  │  │      │  │  │      feedback.html
+│  │  │      │  │  │      file.rename.html
+│  │  │      │  │  │      file.versions.html
+│  │  │      │  │  │      file.view.html
+│  │  │      │  │  │      group.profile.html
+│  │  │      │  │  │      import.html
+│  │  │      │  │  │      login.html
+│  │  │      │  │  │      main.html
+│  │  │      │  │  │      passwordlost.html
+│  │  │      │  │  │      passwordreset.html
+│  │  │      │  │  │      settings.account.html
+│  │  │      │  │  │      settings.config.html
+│  │  │      │  │  │      settings.default.html
+│  │  │      │  │  │      settings.fileimporter.html
+│  │  │      │  │  │      settings.group.edit.html
+│  │  │      │  │  │      settings.group.html
+│  │  │      │  │  │      settings.html
+│  │  │      │  │  │      settings.inbox.html
+│  │  │      │  │  │      settings.ldap.html
+│  │  │      │  │  │      settings.metadata.html
+│  │  │      │  │  │      settings.monitoring.html
+│  │  │      │  │  │      settings.security.disabletotp.html
+│  │  │      │  │  │      settings.security.html
+│  │  │      │  │  │      settings.session.html
+│  │  │      │  │  │      settings.user.edit.html
+│  │  │      │  │  │      settings.user.html
+│  │  │      │  │  │      settings.vocabulary.html
+│  │  │      │  │  │      settings.workflow.edit.html
+│  │  │      │  │  │      settings.workflow.html
+│  │  │      │  │  │      tag.default.html
+│  │  │      │  │  │      tag.edit.html
+│  │  │      │  │  │      tag.html
+│  │  │      │  │  │      user.profile.html
+│  │  │      │  │  │      usergroup.default.html
+│  │  │      │  │  │      usergroup.html
+│  │  │      │  │  │      
+│  │  │      │  │  └─share
+│  │  │      │  │          403.html
+│  │  │      │  │          file.view.html
+│  │  │      │  │          main.html
+│  │  │      │  │          share.html
+│  │  │      │  │          share.pdf.html
+│  │  │      │  │          
+│  │  │      │  └─style
+│  │  │      │          bootstrap.css
+│  │  │      │          colorpicker.css
+│  │  │      │          fontawesome.css
+│  │  │      │          main.less
+│  │  │      │          ng-onboarding.css
+│  │  │      │          pell.css
+│  │  │      │          
+│  │  │      └─WEB-INF
+│  │  │              web.xml
+│  │  │              
+│  │  ├─prod
+│  │  │  └─resources
+│  │  │          config.properties
+│  │  │          log4j.properties
+│  │  │          
+│  │  └─test
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─sismics
+│  │      │          └─docs
+│  │      │              └─rest
+│  │      │                  │  BaseTransactionalTest.java
+│  │      │                  │  TestAclResource.java
+│  │      │                  │  TestAppResource.java
+│  │      │                  │  TestAuditLogResource.java
+│  │      │                  │  TestCommentResource.java
+│  │      │                  │  TestDocumentResource.java
+│  │      │                  │  TestFileResource.java
+│  │      │                  │  TestGroupResource.java
+│  │      │                  │  TestMetadataResource.java
+│  │      │                  │  TestRouteModelResource.java
+│  │      │                  │  TestRouteResource.java
+│  │      │                  │  TestSecurity.java
+│  │      │                  │  TestShareResource.java
+│  │      │                  │  TestTagResource.java
+│  │      │                  │  TestThemeResource.java
+│  │      │                  │  TestUserResource.java
+│  │      │                  │  TestVocabularyResource.java
+│  │      │                  │  TestWebhookResource.java
+│  │      │                  │  
+│  │      │                  ├─resource
+│  │      │                  │      ThirdPartyWebhookResource.java
+│  │      │                  │      
+│  │      │                  └─util
+│  │      │                          TestDocumentSearchCriteriaUtil.java
+│  │      │                          
+│  │      └─resources
+│  │          │  hibernate.properties
+│  │          │  log4j.properties
+│  │          │  test.ldif
+│  │          │  
+│  │          └─file
+│  │                  apache.pptx
+│  │                  document.docx
+│  │                  document.odt
+│  │                  document.txt
+│  │                  Einstein-Roosevelt-letter.png
+│  │                  PIA00452.jpg
+│  │                  test_mail.eml
+│  │                  video.webm
+│  │                  wikipedia.pdf
+│  │                  wikipedia.zip
+│  │                  
+│  └─target
+│      │  docs-web-1.12-SNAPSHOT.war
+│      │  
+│      ├─classes
+│      │  │  config.properties
+│      │  │  hibernate.properties
+│      │  │  log4j.properties
+│      │  │  
+│      │  ├─com
+│      │  │  └─sismics
+│      │  │      └─docs
+│      │  │          └─rest
+│      │  │              ├─constant
+│      │  │              │      BaseFunction.class
+│      │  │              │      
+│      │  │              ├─resource
+│      │  │              │      AclResource.class
+│      │  │              │      AppResource.class
+│      │  │              │      AuditLogResource.class
+│      │  │              │      BaseResource.class
+│      │  │              │      CommentResource.class
+│      │  │              │      DocsMessageBodyWriter.class
+│      │  │              │      DocumentResource.class
+│      │  │              │      FileResource.class
+│      │  │              │      GroupResource.class
+│      │  │              │      MetadataResource.class
+│      │  │              │      RouteModelResource$1.class
+│      │  │              │      RouteModelResource.class
+│      │  │              │      RouteResource.class
+│      │  │              │      ShareResource.class
+│      │  │              │      TagResource.class
+│      │  │              │      ThemeResource$1.class
+│      │  │              │      ThemeResource.class
+│      │  │              │      UserResource.class
+│      │  │              │      VocabularyResource.class
+│      │  │              │      WebhookResource.class
+│      │  │              │      
+│      │  │              └─util
+│      │  │                      DocumentSearchCriteriaUtil.class
+│      │  │                      TagUtil.class
+│      │  │                      
+│      │  └─image
+│      │          background.jpg
+│      │          file-thumb.png
+│      │          file-web.png
+│      │          logo.png
+│      │          
+│      ├─docs-web-1.12-SNAPSHOT
+│      │  │  Gruntfile.js
+│      │  │  header.md
+│      │  │  package-lock.json
+│      │  │  package.json
+│      │  │  
+│      │  ├─META-INF
+│      │  ├─src
+│      │  │  │  index.html
+│      │  │  │  manifest.json
+│      │  │  │  share.html
+│      │  │  │  
+│      │  │  ├─app
+│      │  │  │  ├─docs
+│      │  │  │  │  │  app.js
+│      │  │  │  │  │  
+│      │  │  │  │  ├─controller
+│      │  │  │  │  │  │  Footer.js
+│      │  │  │  │  │  │  Login.js
+│      │  │  │  │  │  │  Main.js
+│      │  │  │  │  │  │  ModalFeedback.js
+│      │  │  │  │  │  │  ModalImport.js
+│      │  │  │  │  │  │  ModalPasswordLost.js
+│      │  │  │  │  │  │  Navigation.js
+│      │  │  │  │  │  │  PasswordReset.js
+│      │  │  │  │  │  │  
+│      │  │  │  │  │  ├─document
+│      │  │  │  │  │  │      Document.js
+│      │  │  │  │  │  │      DocumentDefault.js
+│      │  │  │  │  │  │      DocumentEdit.js
+│      │  │  │  │  │  │      DocumentModalAddTag.js
+│      │  │  │  │  │  │      DocumentModalPdf.js
+│      │  │  │  │  │  │      DocumentModalShare.js
+│      │  │  │  │  │  │      DocumentView.js
+│      │  │  │  │  │  │      DocumentViewActivity.js
+│      │  │  │  │  │  │      DocumentViewContent.js
+│      │  │  │  │  │  │      DocumentViewPermissions.js
+│      │  │  │  │  │  │      DocumentViewWorkflow.js
+│      │  │  │  │  │  │      FileModalView.js
+│      │  │  │  │  │  │      FileRename.js
+│      │  │  │  │  │  │      FileView.js
+│      │  │  │  │  │  │      ModalFileVersions.js
+│      │  │  │  │  │  │      
+│      │  │  │  │  │  ├─settings
+│      │  │  │  │  │  │      Settings.js
+│      │  │  │  │  │  │      SettingsAccount.js
+│      │  │  │  │  │  │      SettingsConfig.js
+│      │  │  │  │  │  │      SettingsDefault.js
+│      │  │  │  │  │  │      SettingsGroup.js
+│      │  │  │  │  │  │      SettingsGroupEdit.js
+│      │  │  │  │  │  │      SettingsInbox.js
+│      │  │  │  │  │  │      SettingsLdap.js
+│      │  │  │  │  │  │      SettingsMetadata.js
+│      │  │  │  │  │  │      SettingsMonitoring.js
+│      │  │  │  │  │  │      SettingsSecurity.js
+│      │  │  │  │  │  │      SettingsSecurityModalDisableTotp.js
+│      │  │  │  │  │  │      SettingsSession.js
+│      │  │  │  │  │  │      SettingsUser.js
+│      │  │  │  │  │  │      SettingsUserEdit.js
+│      │  │  │  │  │  │      SettingsVocabulary.js
+│      │  │  │  │  │  │      SettingsWorkflow.js
+│      │  │  │  │  │  │      SettingsWorkflowEdit.js
+│      │  │  │  │  │  │      
+│      │  │  │  │  │  ├─tag
+│      │  │  │  │  │  │      Tag.js
+│      │  │  │  │  │  │      TagEdit.js
+│      │  │  │  │  │  │      
+│      │  │  │  │  │  └─usergroup
+│      │  │  │  │  │          GroupProfile.js
+│      │  │  │  │  │          UserGroup.js
+│      │  │  │  │  │          UserProfile.js
+│      │  │  │  │  │          
+│      │  │  │  │  ├─directive
+│      │  │  │  │  │      Acl.js
+│      │  │  │  │  │      AclEdit.js
+│      │  │  │  │  │      AddSpaceBetween.js
+│      │  │  │  │  │      AuditLog.js
+│      │  │  │  │  │      ImgError.js
+│      │  │  │  │  │      InvertTextColor.js
+│      │  │  │  │  │      Pell.js
+│      │  │  │  │  │      SelectRelation.js
+│      │  │  │  │  │      SelectTag.js
+│      │  │  │  │  │      
+│      │  │  │  │  ├─filter
+│      │  │  │  │  │      Filesize.js
+│      │  │  │  │  │      
+│      │  │  │  │  └─service
+│      │  │  │  │          User.js
+│      │  │  │  │          
+│      │  │  │  └─share
+│      │  │  │      │  app.js
+│      │  │  │      │  
+│      │  │  │      ├─controller
+│      │  │  │      │      FileModalView.js
+│      │  │  │      │      FileView.js
+│      │  │  │      │      Footer.js
+│      │  │  │      │      Main.js
+│      │  │  │      │      Share.js
+│      │  │  │      │      ShareModalPdf.js
+│      │  │  │      │      
+│      │  │  │      └─filter
+│      │  │  │              Filesize.js
+│      │  │  │              
+│      │  │  ├─fonts
+│      │  │  │      fa-brands-400.eot
+│      │  │  │      fa-brands-400.svg
+│      │  │  │      fa-brands-400.ttf
+│      │  │  │      fa-brands-400.woff
+│      │  │  │      fa-brands-400.woff2
+│      │  │  │      fa-regular-400.eot
+│      │  │  │      fa-regular-400.svg
+│      │  │  │      fa-regular-400.ttf
+│      │  │  │      fa-regular-400.woff
+│      │  │  │      fa-regular-400.woff2
+│      │  │  │      fa-solid-900.eot
+│      │  │  │      fa-solid-900.svg
+│      │  │  │      fa-solid-900.ttf
+│      │  │  │      fa-solid-900.woff
+│      │  │  │      fa-solid-900.woff2
+│      │  │  │      
+│      │  │  ├─img
+│      │  │  │  │  alpha.png
+│      │  │  │  │  glyphicons-halflings-white.png
+│      │  │  │  │  glyphicons-halflings.png
+│      │  │  │  │  hue.png
+│      │  │  │  │  saturation.png
+│      │  │  │  │  title.png
+│      │  │  │  │  
+│      │  │  │  └─icons
+│      │  │  │          icon-128x128.png
+│      │  │  │          icon-144x144.png
+│      │  │  │          icon-152x152.png
+│      │  │  │          icon-192x192.png
+│      │  │  │          icon-384x384.png
+│      │  │  │          icon-512x512.png
+│      │  │  │          icon-72x72.png
+│      │  │  │          icon-96x96.png
+│      │  │  │          
+│      │  │  ├─lib
+│      │  │  │      angular.colorpicker.js
+│      │  │  │      angular.file-upload.js
+│      │  │  │      angular.js
+│      │  │  │      angular.ng-onboarding.js
+│      │  │  │      angular.ngprogress.js
+│      │  │  │      angular.qrcode.js
+│      │  │  │      angular.restangular.js
+│      │  │  │      angular.sanitize.js
+│      │  │  │      angular.timeago.js
+│      │  │  │      angular.tmhDynamicLocale.js
+│      │  │  │      angular.touch.js
+│      │  │  │      angular.translate.js
+│      │  │  │      angular.ui-bootstrap.js
+│      │  │  │      angular.ui-router.js
+│      │  │  │      angular.ui-sortable.js
+│      │  │  │      angular.ui-validate.js
+│      │  │  │      colorpicker.js
+│      │  │  │      jquery.js
+│      │  │  │      jquery.ui.js
+│      │  │  │      less.js
+│      │  │  │      pell.js
+│      │  │  │      underscore.js
+│      │  │  │      
+│      │  │  ├─locale
+│      │  │  │      angular-locale_de.js
+│      │  │  │      angular-locale_el.js
+│      │  │  │      angular-locale_en.js
+│      │  │  │      angular-locale_es.js
+│      │  │  │      angular-locale_fr.js
+│      │  │  │      angular-locale_it.js
+│      │  │  │      angular-locale_pl.js
+│      │  │  │      angular-locale_pt.js
+│      │  │  │      angular-locale_ru.js
+│      │  │  │      angular-locale_sq_AL.js
+│      │  │  │      angular-locale_zh_CN.js
+│      │  │  │      angular-locale_zh_TW.js
+│      │  │  │      de.json
+│      │  │  │      el.json
+│      │  │  │      en.json
+│      │  │  │      es.json
+│      │  │  │      fr.json
+│      │  │  │      it.json
+│      │  │  │      pl.json
+│      │  │  │      pt.json
+│      │  │  │      ru.json
+│      │  │  │      sq_AL.json
+│      │  │  │      zh_CN.json
+│      │  │  │      zh_TW.json
+│      │  │  │      
+│      │  │  ├─partial
+│      │  │  │  ├─docs
+│      │  │  │  │      directive.acledit.html
+│      │  │  │  │      directive.auditlog.html
+│      │  │  │  │      directive.selectionrelation.typeahead.html
+│      │  │  │  │      directive.selectrelation.html
+│      │  │  │  │      directive.selecttag.html
+│      │  │  │  │      directive.typeahead.acl.html
+│      │  │  │  │      document.add.tag.html
+│      │  │  │  │      document.default.html
+│      │  │  │  │      document.edit.html
+│      │  │  │  │      document.html
+│      │  │  │  │      document.pdf.html
+│      │  │  │  │      document.share.html
+│      │  │  │  │      document.view.activity.html
+│      │  │  │  │      document.view.content.html
+│      │  │  │  │      document.view.html
+│      │  │  │  │      document.view.permissions.html
+│      │  │  │  │      document.view.workflow.html
+│      │  │  │  │      feedback.html
+│      │  │  │  │      file.rename.html
+│      │  │  │  │      file.versions.html
+│      │  │  │  │      file.view.html
+│      │  │  │  │      group.profile.html
+│      │  │  │  │      import.html
+│      │  │  │  │      login.html
+│      │  │  │  │      main.html
+│      │  │  │  │      passwordlost.html
+│      │  │  │  │      passwordreset.html
+│      │  │  │  │      settings.account.html
+│      │  │  │  │      settings.config.html
+│      │  │  │  │      settings.default.html
+│      │  │  │  │      settings.fileimporter.html
+│      │  │  │  │      settings.group.edit.html
+│      │  │  │  │      settings.group.html
+│      │  │  │  │      settings.html
+│      │  │  │  │      settings.inbox.html
+│      │  │  │  │      settings.ldap.html
+│      │  │  │  │      settings.metadata.html
+│      │  │  │  │      settings.monitoring.html
+│      │  │  │  │      settings.security.disabletotp.html
+│      │  │  │  │      settings.security.html
+│      │  │  │  │      settings.session.html
+│      │  │  │  │      settings.user.edit.html
+│      │  │  │  │      settings.user.html
+│      │  │  │  │      settings.vocabulary.html
+│      │  │  │  │      settings.workflow.edit.html
+│      │  │  │  │      settings.workflow.html
+│      │  │  │  │      tag.default.html
+│      │  │  │  │      tag.edit.html
+│      │  │  │  │      tag.html
+│      │  │  │  │      user.profile.html
+│      │  │  │  │      usergroup.default.html
+│      │  │  │  │      usergroup.html
+│      │  │  │  │      
+│      │  │  │  └─share
+│      │  │  │          403.html
+│      │  │  │          file.view.html
+│      │  │  │          main.html
+│      │  │  │          share.html
+│      │  │  │          share.pdf.html
+│      │  │  │          
+│      │  │  └─style
+│      │  │          bootstrap.css
+│      │  │          colorpicker.css
+│      │  │          fontawesome.css
+│      │  │          main.less
+│      │  │          ng-onboarding.css
+│      │  │          pell.css
+│      │  │          
+│      │  └─WEB-INF
+│      │      │  web.xml
+│      │      │  
+│      │      ├─classes
+│      │      │  │  config.properties
+│      │      │  │  hibernate.properties
+│      │      │  │  log4j.properties
+│      │      │  │  
+│      │      │  ├─com
+│      │      │  │  └─sismics
+│      │      │  │      └─docs
+│      │      │  │          └─rest
+│      │      │  │              ├─constant
+│      │      │  │              │      BaseFunction.class
+│      │      │  │              │      
+│      │      │  │              ├─resource
+│      │      │  │              │      AclResource.class
+│      │      │  │              │      AppResource.class
+│      │      │  │              │      AuditLogResource.class
+│      │      │  │              │      BaseResource.class
+│      │      │  │              │      CommentResource.class
+│      │      │  │              │      DocsMessageBodyWriter.class
+│      │      │  │              │      DocumentResource.class
+│      │      │  │              │      FileResource.class
+│      │      │  │              │      GroupResource.class
+│      │      │  │              │      MetadataResource.class
+│      │      │  │              │      RouteModelResource$1.class
+│      │      │  │              │      RouteModelResource.class
+│      │      │  │              │      RouteResource.class
+│      │      │  │              │      ShareResource.class
+│      │      │  │              │      TagResource.class
+│      │      │  │              │      ThemeResource$1.class
+│      │      │  │              │      ThemeResource.class
+│      │      │  │              │      UserResource.class
+│      │      │  │              │      VocabularyResource.class
+│      │      │  │              │      WebhookResource.class
+│      │      │  │              │      
+│      │      │  │              └─util
+│      │      │  │                      DocumentSearchCriteriaUtil.class
+│      │      │  │                      TagUtil.class
+│      │      │  │                      
+│      │      │  └─image
+│      │      │          background.jpg
+│      │      │          file-thumb.png
+│      │      │          file-web.png
+│      │      │          logo.png
+│      │      │          
+│      │      └─lib
+│      │              activation-1.1.jar
+│      │              angus-activation-2.0.0.jar
+│      │              annotations-13.0.jar
+│      │              antlr4-runtime-4.10.1.jar
+│      │              aopalliance-repackaged-3.0.3.jar
+│      │              api-asn1-api-2.1.3.jar
+│      │              api-asn1-ber-2.1.3.jar
+│      │              api-i18n-2.1.3.jar
+│      │              api-ldap-client-api-2.1.3.jar
+│      │              api-ldap-codec-core-2.1.3.jar
+│      │              api-ldap-codec-standalone-2.1.3.jar
+│      │              api-ldap-extras-aci-2.1.3.jar
+│      │              api-ldap-extras-codec-2.1.3.jar
+│      │              api-ldap-extras-codec-api-2.1.3.jar
+│      │              api-ldap-model-2.1.3.jar
+│      │              api-ldap-net-mina-2.1.3.jar
+│      │              api-util-2.1.3.jar
+│      │              avalon-framework-4.1.3.jar
+│      │              bcprov-jdk15on-1.70.jar
+│      │              bcrypt-0.10.2.jar
+│      │              byte-buddy-1.14.7.jar
+│      │              bytes-1.5.0.jar
+│      │              caffeine-2.9.3.jar
+│      │              checker-qual-3.12.0.jar
+│      │              classmate-1.5.1.jar
+│      │              common-image-3.9.4.jar
+│      │              common-io-3.9.4.jar
+│      │              common-lang-3.9.4.jar
+│      │              commons-codec-1.15.jar
+│      │              commons-collections4-4.4.jar
+│      │              commons-compress-1.22.jar
+│      │              commons-email-1.5.jar
+│      │              commons-io-2.11.0.jar
+│      │              commons-lang3-3.12.0.jar
+│      │              commons-logging-1.1.jar
+│      │              commons-math3-3.6.1.jar
+│      │              commons-pool2-2.11.1.jar
+│      │              curvesapi-1.06.jar
+│      │              docs-core-1.12-SNAPSHOT.jar
+│      │              docs-web-common-1.12-SNAPSHOT.jar
+│      │              error_prone_annotations-2.11.0.jar
+│      │              failureaccess-1.0.1.jar
+│      │              fontbox-2.0.29.jar
+│      │              fr.opensagres.odfdom.converter.core-2.0.4.jar
+│      │              fr.opensagres.odfdom.converter.pdf-2.0.4.jar
+│      │              fr.opensagres.poi.xwpf.converter.core-2.0.4.jar
+│      │              fr.opensagres.poi.xwpf.converter.pdf-2.0.4.jar
+│      │              fr.opensagres.xdocreport.itext.extension-2.0.4.jar
+│      │              freemarker-2.3.32.jar
+│      │              guava-31.1-jre.jar
+│      │              h2-1.4.199.jar
+│      │              hibernate-commons-annotations-6.0.6.Final.jar
+│      │              hibernate-core-6.3.1.Final.jar
+│      │              hk2-api-3.0.3.jar
+│      │              hk2-locator-3.0.3.jar
+│      │              hk2-utils-3.0.3.jar
+│      │              imageio-core-3.9.4.jar
+│      │              imageio-jpeg-3.9.4.jar
+│      │              imageio-metadata-3.9.4.jar
+│      │              imageio-tiff-3.9.4.jar
+│      │              imgscalr-lib-4.2.jar
+│      │              istack-commons-runtime-4.1.1.jar
+│      │              itext-2.1.7.jar
+│      │              j2objc-annotations-1.3.jar
+│      │              jackson-annotations-2.14.2.jar
+│      │              jackson-core-2.14.2.jar
+│      │              jackson-databind-2.14.2.jar
+│      │              jai-imageio-core-1.4.0.jar
+│      │              jai-imageio-jpeg2000-1.4.0.jar
+│      │              jakarta.activation-api-2.1.0.jar
+│      │              jakarta.annotation-api-2.0.0.jar
+│      │              jakarta.inject-api-2.0.1.jar
+│      │              jakarta.json-api-2.1.1.jar
+│      │              jakarta.persistence-api-3.1.0.jar
+│      │              jakarta.transaction-api-2.0.1.jar
+│      │              jakarta.validation-api-3.0.0.jar
+│      │              jakarta.ws.rs-api-3.0.0.jar
+│      │              jakarta.xml.bind-api-4.0.0.jar
+│      │              jandex-3.1.2.jar
+│      │              java-jwt-4.4.0.jar
+│      │              javassist-3.29.0-GA.jar
+│      │              javax.mail-1.5.6.jar
+│      │              jaxb-core-4.0.2.jar
+│      │              jaxb-runtime-4.0.2.jar
+│      │              jboss-logging-3.5.0.Final.jar
+│      │              jcl-over-slf4j-1.7.30.jar
+│      │              jersey-client-3.0.10.jar
+│      │              jersey-common-3.0.10.jar
+│      │              jersey-container-servlet-3.0.10.jar
+│      │              jersey-container-servlet-core-3.0.10.jar
+│      │              jersey-hk2-3.0.10.jar
+│      │              jersey-media-json-processing-3.0.10.jar
+│      │              jersey-media-multipart-3.0.10.jar
+│      │              jersey-server-3.0.10.jar
+│      │              joda-time-2.12.2.jar
+│      │              jsoup-1.15.4.jar
+│      │              jsr305-3.0.2.jar
+│      │              jul-to-slf4j-1.7.30.jar
+│      │              kotlin-stdlib-1.6.20.jar
+│      │              kotlin-stdlib-common-1.5.31.jar
+│      │              kotlin-stdlib-jdk7-1.5.31.jar
+│      │              kotlin-stdlib-jdk8-1.5.31.jar
+│      │              levigo-jbig2-imageio-2.0.jar
+│      │              listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+│      │              log4j-1.2.17.jar
+│      │              log4j-api-2.17.1.jar
+│      │              log4j-core-2.17.1.jar
+│      │              logkit-1.0.1.jar
+│      │              lucene-analyzers-common-8.7.0.jar
+│      │              lucene-backward-codecs-8.7.0.jar
+│      │              lucene-core-8.7.0.jar
+│      │              lucene-highlighter-8.7.0.jar
+│      │              lucene-memory-8.7.0.jar
+│      │              lucene-queries-8.7.0.jar
+│      │              lucene-queryparser-8.7.0.jar
+│      │              lucene-sandbox-8.7.0.jar
+│      │              lucene-suggest-8.7.0.jar
+│      │              mimepull-1.9.13.jar
+│      │              mina-core-2.2.1.jar
+│      │              odfdom-java-0.8.7.jar
+│      │              okhttp-4.10.0.jar
+│      │              okio-jvm-3.0.0.jar
+│      │              org.apache.servicemix.bundles.antlr-2.7.7_5.jar
+│      │              osgi-resource-locator-1.0.3.jar
+│      │              parsson-1.0.0.jar
+│      │              parsson-media-1.0.0.jar
+│      │              pdfbox-2.0.29.jar
+│      │              poi-5.2.0.jar
+│      │              poi-ooxml-5.2.0.jar
+│      │              poi-ooxml-full-5.2.0.jar
+│      │              postgresql-42.6.0.jar
+│      │              servlet-api-2.3.jar
+│      │              slf4j-api-1.7.30.jar
+│      │              slf4j-log4j12-1.7.30.jar
+│      │              SparseBitSet-1.2.jar
+│      │              txw2-4.0.2.jar
+│      │              xercesImpl-2.9.1.jar
+│      │              xml-apis-1.3.04.jar
+│      │              xmlbeans-5.0.3.jar
+│      │              
+│      ├─generated-sources
+│      │  └─annotations
+│      ├─generated-test-sources
+│      │  └─test-annotations
+│      ├─maven-archiver
+│      │      pom.properties
+│      │      
+│      ├─maven-status
+│      │  └─maven-compiler-plugin
+│      │      ├─compile
+│      │      │  └─default-compile
+│      │      │          createdFiles.lst
+│      │      │          inputFiles.lst
+│      │      │          
+│      │      └─testCompile
+│      │          └─default-testCompile
+│      │                  createdFiles.lst
+│      │                  inputFiles.lst
+│      │                  
+│      ├─test-classes
+│      │  │  hibernate.properties
+│      │  │  log4j.properties
+│      │  │  test.ldif
+│      │  │  
+│      │  ├─com
+│      │  │  └─sismics
+│      │  │      └─docs
+│      │  │          └─rest
+│      │  │              │  BaseTransactionalTest.class
+│      │  │              │  TestAclResource.class
+│      │  │              │  TestAppResource.class
+│      │  │              │  TestAuditLogResource.class
+│      │  │              │  TestCommentResource.class
+│      │  │              │  TestDocumentResource.class
+│      │  │              │  TestFileResource.class
+│      │  │              │  TestGroupResource.class
+│      │  │              │  TestMetadataResource.class
+│      │  │              │  TestRouteModelResource.class
+│      │  │              │  TestRouteResource.class
+│      │  │              │  TestSecurity.class
+│      │  │              │  TestShareResource.class
+│      │  │              │  TestTagResource.class
+│      │  │              │  TestThemeResource.class
+│      │  │              │  TestUserResource.class
+│      │  │              │  TestVocabularyResource.class
+│      │  │              │  TestWebhookResource.class
+│      │  │              │  
+│      │  │              ├─resource
+│      │  │              │      ThirdPartyWebhookResource.class
+│      │  │              │      
+│      │  │              └─util
+│      │  │                      TestDocumentSearchCriteriaUtil.class
+│      │  │                      
+│      │  └─file
+│      │          apache.pptx
+│      │          document.docx
+│      │          document.odt
+│      │          document.txt
+│      │          Einstein-Roosevelt-letter.png
+│      │          PIA00452.jpg
+│      │          test_mail.eml
+│      │          video.webm
+│      │          wikipedia.pdf
+│      │          wikipedia.zip
+│      │          
+│      └─tmp
+│          └─jsp
+├─docs-web-common
+│  │  pom.xml
+│  │  
+│  ├─src
+│  │  ├─main
+│  │  │  └─java
+│  │  │      └─com
+│  │  │          └─sismics
+│  │  │              ├─rest
+│  │  │              │  ├─exception
+│  │  │              │  │      ClientException.java
+│  │  │              │  │      ForbiddenClientException.java
+│  │  │              │  │      ServerException.java
+│  │  │              │  │      
+│  │  │              │  └─util
+│  │  │              │          AclUtil.java
+│  │  │              │          RestUtil.java
+│  │  │              │          ValidationUtil.java
+│  │  │              │          
+│  │  │              ├─security
+│  │  │              │      AnonymousPrincipal.java
+│  │  │              │      IPrincipal.java
+│  │  │              │      UserPrincipal.java
+│  │  │              │      
+│  │  │              └─util
+│  │  │                  ├─filter
+│  │  │                  │      CorsFilter.java
+│  │  │                  │      HeaderBasedSecurityFilter.java
+│  │  │                  │      JwtBasedSecurityFilter.java
+│  │  │                  │      RequestContextFilter.java
+│  │  │                  │      SecurityFilter.java
+│  │  │                  │      TokenBasedSecurityFilter.java
+│  │  │                  │      
+│  │  │                  └─listener
+│  │  │                          IIOProviderContextListener.java
+│  │  │                          
+│  │  └─test
+│  │      └─java
+│  │          └─com
+│  │              └─sismics
+│  │                  └─docs
+│  │                      └─rest
+│  │                          │  BaseJerseyTest.java
+│  │                          │  
+│  │                          └─util
+│  │                                  ClientUtil.java
+│  │                                  TestValidationUtil.java
+│  │                                  
+│  └─target
+│      │  docs-web-common-1.12-SNAPSHOT-tests.jar
+│      │  docs-web-common-1.12-SNAPSHOT.jar
+│      │  
+│      ├─classes
+│      │  └─com
+│      │      └─sismics
+│      │          ├─rest
+│      │          │  ├─exception
+│      │          │  │      ClientException.class
+│      │          │  │      ForbiddenClientException.class
+│      │          │  │      ServerException.class
+│      │          │  │      
+│      │          │  └─util
+│      │          │          AclUtil.class
+│      │          │          RestUtil.class
+│      │          │          ValidationUtil.class
+│      │          │          
+│      │          ├─security
+│      │          │      AnonymousPrincipal.class
+│      │          │      IPrincipal.class
+│      │          │      UserPrincipal.class
+│      │          │      
+│      │          └─util
+│      │              ├─filter
+│      │              │      CorsFilter.class
+│      │              │      HeaderBasedSecurityFilter.class
+│      │              │      JwtBasedSecurityFilter.class
+│      │              │      RequestContextFilter.class
+│      │              │      SecurityFilter.class
+│      │              │      TokenBasedSecurityFilter.class
+│      │              │      
+│      │              └─listener
+│      │                      IIOProviderContextListener$LocalFilter.class
+│      │                      IIOProviderContextListener.class
+│      │                      
+│      ├─generated-sources
+│      │  └─annotations
+│      ├─generated-test-sources
+│      │  └─test-annotations
+│      ├─maven-archiver
+│      │      pom.properties
+│      │      
+│      ├─maven-status
+│      │  └─maven-compiler-plugin
+│      │      ├─compile
+│      │      │  └─default-compile
+│      │      │          createdFiles.lst
+│      │      │          inputFiles.lst
+│      │      │          
+│      │      └─testCompile
+│      │          └─default-testCompile
+│      │                  createdFiles.lst
+│      │                  inputFiles.lst
+│      │                  
+│      └─test-classes
+│          └─com
+│              └─sismics
+│                  └─docs
+│                      └─rest
+│                          │  BaseJerseyTest.class
+│                          │  
+│                          └─util
+│                                  ClientUtil.class
+│                                  TestValidationUtil.class
+│                                  
+└─scripts
+        dev_setup.sh
+        
