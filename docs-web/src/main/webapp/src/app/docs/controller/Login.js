@@ -19,9 +19,9 @@ angular.module('docs').controller('Login', function(Restangular, $scope, $rootSc
     };
     $scope.login();
   };
-  
+
   // Login
-  $scope.login = function() {
+/*  $scope.login = function() {
     User.login($scope.user).then(function() {
       User.userInfo(true).then(function(data) {
         $rootScope.userInfo = data;
@@ -43,6 +43,34 @@ angular.module('docs').controller('Login', function(Restangular, $scope, $rootSc
         // Login truly failed
         var title = $translate.instant('login.login_failed_title');
         var msg = $translate.instant('login.login_failed_message');
+        var btns = [{result: 'ok', label: $translate.instant('ok'), cssClass: 'btn-primary'}];
+        $dialog.messageBox(title, msg, btns);
+      }
+    });
+  };*/
+  $scope.login = function() {
+    User.login($scope.user).then(function() {
+      User.userInfo(true).then(function(data) {
+        $rootScope.userInfo = data;
+      });
+
+      if ($stateParams.redirectState !== undefined && $stateParams.redirectParams !== undefined) {
+        $state.go($stateParams.redirectState, JSON.parse($stateParams.redirectParams))
+            .catch(function() {
+              $state.go('document.default');
+            });
+      } else {
+        $state.go('document.default');
+      }
+
+    }, function(data) {
+      if (data.data.type === 'ValidationCodeRequired') {
+        // A TOTP validation code is required to login
+        $scope.codeRequired = true;
+      } else {
+        // Login truly failed，使用后端返回的 message
+        var title = $translate.instant('login.login_failed_title');
+        var msg = data.data.message || $translate.instant('login.login_failed_message'); // ← 关键修改
         var btns = [{result: 'ok', label: $translate.instant('ok'), cssClass: 'btn-primary'}];
         $dialog.messageBox(title, msg, btns);
       }
@@ -73,6 +101,18 @@ angular.module('docs').controller('Login', function(Restangular, $scope, $rootSc
         var btns = [{result: 'ok', label: $translate.instant('ok'), cssClass: 'btn-primary'}];
         $dialog.messageBox(title, msg, btns);
       });
+    });
+  };
+
+  // Password lost
+  $scope.register = function () {
+    $uibModal.open({
+      templateUrl: 'partial/docs/passwordlost.html',
+      controller: 'ModalPasswordLost'
+    }).result.then(function (username) {
+      if (username === null) {
+        return;
+      }
     });
   };
 });

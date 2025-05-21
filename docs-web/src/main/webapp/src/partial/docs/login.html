@@ -54,12 +54,15 @@
                    ng-attr-placeholder="{{ 'login.validation_code' | translate }}" ng-model="user.code" />
           </div>
 
+
           <div class="checkbox text-muted">
             <label>
               <input type="checkbox" ng-model="user.remember" name="remember" /> {{ 'login.remember_me' | translate }}
             </label>
-          </div>
 
+              <a style="float: right;margin-right: 20px" href="#/register"> 注册 </a>
+
+          </div>
           <div class="row">
             <div class="col-md-6">
               <button type="submit" class="btn btn-primary" ng-click="login()">

@@ -1,6 +1,4 @@
 {
-  "grunt-apidoc": "^0.11.0",
-
   "name": "sismics-docs",
   "description": "Lightweight document management system",
   "readme": "See http://github.com/simics/docs for more informations.",

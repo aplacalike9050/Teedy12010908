@@ -15,6 +15,11 @@
   <name>Docs Core</name>
 
   <dependencies>
+    <dependency>
+      <groupId>jakarta.websocket</groupId>
+      <artifactId>jakarta.websocket-api</artifactId>
+      <version>2.2.0</version>
+    </dependency>
     <!-- Persistence layer dependencies -->
     <dependency>
       <groupId>org.hibernate.orm</groupId>
@@ -179,7 +184,6 @@
       <artifactId>levigo-jbig2-imageio</artifactId>
     </dependency>
 
-
     <!-- Only for connecting to PostgreSQL database -->
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -236,16 +240,5 @@
       </resource>
     </resources>
   </build>
-  
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.1</version>
-      </plugin>
-    </plugins>
-  </reporting>
 
-    
 </project>

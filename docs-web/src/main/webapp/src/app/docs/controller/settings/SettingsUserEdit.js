@@ -10,7 +10,7 @@ angular.module('docs').controller('SettingsUserEdit', function($scope, $dialog, 
   $scope.isEdit = function () {
     return $stateParams.username;
   };
-  
+
   /**
    * In edit mode, load the current user.
    */
@@ -30,7 +30,7 @@ angular.module('docs').controller('SettingsUserEdit', function($scope, $dialog, 
     var promise = null;
     var user = angular.copy($scope.user);
     user.storage_quota *= 1000000;
-    
+
     if ($scope.isEdit()) {
       promise = Restangular
         .one('user', $stateParams.username)
@@ -40,7 +40,7 @@ angular.module('docs').controller('SettingsUserEdit', function($scope, $dialog, 
         .one('user')
         .put(user);
     }
-    
+
     promise.then(function () {
       $scope.loadUsers();
       $state.go('settings.user');
@@ -51,6 +51,24 @@ angular.module('docs').controller('SettingsUserEdit', function($scope, $dialog, 
         var btns = [{result: 'ok', label: $translate.instant('ok'), cssClass: 'btn-primary'}];
         $dialog.messageBox(title, msg, btns);
       }
+    });
+  };
+
+
+  $scope.register = function () {
+    var promise = null;
+    var user = angular.copy($scope.user);
+    user.storage_quota *= 1000000;
+      promise = Restangular
+          .one('user/register1')
+          .put(user);
+
+
+    promise.then(function () {
+      alert('注册提交成功请等待管理员审核！');
+      $state.go('login');  // 或者你自己的注册成功跳转页面
+    }, function (e) {
+      alert('注册失败，请检查输入或联系管理员！');
     });
   };
 

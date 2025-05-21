@@ -8,6 +8,7 @@ import com.auth0.jwt.interfaces.JWTVerifier;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.security.cert.Certificate;
 import java.util.Base64;
 
 import com.sismics.docs.core.constant.Constants;
@@ -139,8 +140,8 @@ public class JwtBasedSecurityFilter extends SecurityFilter {
                                 .findFirst()
                                 .map(k -> k.asJsonObject().getJsonArray("x5c").getString(0))
                                 .orElse("");
-                        var decode = Base64.getDecoder().decode(publicKey);
-                        var certificate = CertificateFactory.getInstance("X.509")
+                        byte[] decode = Base64.getDecoder().decode(publicKey);
+                        Certificate certificate = CertificateFactory.getInstance("X.509")
                                 .generateCertificate(new ByteArrayInputStream(decode));
                         rsaPublicKey = (RSAPublicKey) certificate.getPublicKey();
                     }
@@ -155,7 +156,7 @@ public class JwtBasedSecurityFilter extends SecurityFilter {
     }
 
     private JWTVerifier buildJWTVerifier(DecodedJWT jwt) throws CertificateException {
-        var algo = Algorithm.RSA256(getPublicKey(jwt), null);
+        Algorithm algo = Algorithm.RSA256(getPublicKey(jwt), null);
         return JWT.require(algo).build();
     }
 }
