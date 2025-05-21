@@ -6,13 +6,15 @@
          version="5.0"
          metadata-complete="true">
   <display-name>Teedy</display-name>
-  
+
   <!-- Proper loader/unloader of ImageIO plugins -->
   <listener>
     <display-name>ImageIO service provider loader/unloader</display-name>
     <listener-class>com.sismics.util.listener.IIOProviderContextListener</listener-class>
   </listener>
-
+  <listener>
+    <listener-class>com.sismics.docs.rest.util.WebSocketConfig</listener-class>
+  </listener>
   <!-- This filter handles CORS -->
   <filter>
     <filter-name>corsFilter</filter-name>
@@ -31,7 +33,7 @@
     <filter-class>com.sismics.util.filter.RequestContextFilter</filter-class>
     <async-supported>true</async-supported>
   </filter>
-  
+
   <filter-mapping>
     <filter-name>requestContextFilter</filter-name>
     <url-pattern>/api/*</url-pattern>
@@ -63,7 +65,7 @@
       <param-value>false</param-value>
     </init-param>
   </filter>
-  
+
   <filter-mapping>
     <filter-name>tokenBasedSecurityFilter</filter-name>
     <url-pattern>/api/*</url-pattern>
@@ -98,11 +100,11 @@
     <load-on-startup>1</load-on-startup>
     <async-supported>true</async-supported>
   </servlet>
-  
+
   <servlet-mapping>
     <servlet-name>JerseyServlet</servlet-name>
     <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
-  
+
   <absolute-ordering/>
 </web-app>

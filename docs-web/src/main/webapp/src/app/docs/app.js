@@ -37,6 +37,7 @@ angular.module('docs',
         }
       }
     })
+
     .state('tag', {
       url: '/tag',
       abstract: true,
@@ -244,16 +245,6 @@ angular.module('docs',
         }
       }
     })
-//
-      .state('guestRequests', {
-        url: '/guest-requests',
-        views: {
-          'page': {
-            templateUrl: 'src/app/partial/admin/guestRequests.html',
-            controller: 'GuestRequestsController'
-          }
-        }
-      })
     .state('settings.ldap', {
       url: '/ldap',
       views: {
@@ -365,15 +356,25 @@ angular.module('docs',
         }
       }
     })
-    .state('login', {
-      url: '/login?redirectState&redirectParams',
+    .state('register', {
+      url: '/register',
       views: {
         'page': {
-          templateUrl: 'partial/docs/login.html',
-          controller: 'Login'
+          templateUrl: 'partial/docs/register.html',
+          controller: 'SettingsUserEdit'
         }
       }
     })
+
+      .state('login', {
+        url: '/login?redirectState&redirectParams',
+        views: {
+          'page': {
+            templateUrl: 'partial/docs/login.html',
+            controller: 'Login'
+          }
+        }
+      })
     .state('user', {
       url: '/user',
       abstract: true,
@@ -480,10 +481,10 @@ angular.module('docs',
     var param = function(obj) {
       var query = '';
       var name, value, fullSubName, subName, subValue, innerObj, i;
-      
+
       for(name in obj) {
         value = obj[name];
-        
+
         if(value instanceof Array) {
           for(i=0; i<value.length; ++i) {
             subValue = value[i];
@@ -505,10 +506,10 @@ angular.module('docs',
           query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';
         }
       }
-      
+
       return query.length ? query.substr(0, query.length - 1) : query;
     };
-    
+
     return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
   }];
 

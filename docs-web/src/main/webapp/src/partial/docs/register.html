@@ -1,0 +1,90 @@
+
+<div >
+  <h2>用户注册</h2>
+
+  <form class="form-horizontal" name="editUserForm" novalidate autocomplete="off">
+    <div class="form-group" ng-class="{ 'has-error': !editUserForm.userUsername.$valid && editUserForm.$dirty, success: editUserForm.userUsername.$valid }">
+      <label class="col-sm-2 control-label" for="inputUserUsername">{{ 'settings.user.edit.username' | translate }}</label>
+      <div class="col-sm-7">
+        <input name="userUsername" type="text" id="inputUserUsername" required ng-disabled="isEdit()" class="form-control"
+               ng-pattern="/^[a-zA-Z0-9_@.-]*$/"
+               ng-minlength="3" ng-maxlength="50" ng-attr-placeholder="{{ 'settings.user.edit.username' | translate }}" ng-model="user.username" autocomplete="off"/>
+      </div>
+
+      <div class="col-sm-3">
+        <span class="help-block" ng-show="editUserForm.userUsername.$error.required && editUserForm.$dirty">{{ 'validation.required' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userUsername.$error.minlength && editUserForm.$dirty">{{ 'validation.too_short' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userUsername.$error.maxlength && editUserForm.$dirty">{{ 'validation.too_long' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userUsername.$error.pattern && editUserForm.$dirty">{{ 'validation.alphanumeric' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group" ng-class="{ 'has-error': !editUserForm.userEmail.$valid && editUserForm.$dirty, success: editUserForm.userEmail.$valid }">
+      <label class="col-sm-2 control-label" for="inputEmail">{{ 'settings.user.edit.email' | translate }}</label>
+      <div class="col-sm-7">
+        <input name="userEmail" type="email" id="inputEmail" required class="form-control"
+               ng-minlength="1" ng-maxlength="100" ng-attr-placeholder="{{ 'settings.user.edit.email' | translate }}" ng-model="user.email"/>
+      </div>
+
+      <div class="col-sm-3">
+        <span class="help-block" ng-show="editUserForm.userEmail.$error.required && editUserForm.$dirty">{{ 'validation.required' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userEmail.$error.email && editUserForm.$dirty">{{ 'validation.email' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userEmail.$error.minlength && editUserForm.$dirty">{{ 'validation.too_short' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userEmail.$error.maxlength && editUserForm.$dirty">{{ 'validation.too_long' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group" ng-if="user.username != 'guest'"
+      ng-class="{ 'has-error': !editUserForm.userPassword.$valid && editUserForm.$dirty, success: editUserForm.userPassword.$valid }">
+      <label class="col-sm-2 control-label" for="inputUserPassword">{{ 'settings.user.edit.password' | translate }}</label>
+      <div class="col-sm-7">
+        <input type="password" style="display: none;" autocomplete="new-password"/><!-- Hack to disable autofill -->
+        <input name="userPassword" type="password" id="inputUserPassword" ng-required="!isEdit()" class="form-control"
+               ng-minlength="8" ng-maxlength="50" ng-attr-placeholder="{{ 'settings.user.edit.password' | translate }}" ng-model="user.password" autocomplete="new-password"/>
+      </div>
+
+      <div class="col-sm-3">
+        <span class="help-block" ng-show="editUserForm.userPassword.$error.required && editUserForm.$dirty">{{ 'validation.required' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userPassword.$error.minlength && editUserForm.$dirty">{{ 'validation.too_short' | translate }}</span>
+        <span class="help-block" ng-show="editUserForm.userPassword.$error.maxlength && editUserForm.$dirty">{{ 'validation.too_long' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group" ng-if="user.username != 'guest'"
+      ng-class="{ 'has-error': !editUserForm.passwordconfirm.$valid && editUserForm.$dirty, success: editUserForm.passwordconfirm.$valid }">
+      <label class="col-sm-2 control-label" for="inputPasswordConfirm">{{ 'settings.user.edit.password_confirm' | translate }}</label>
+      <div class="col-sm-7">
+        <input name="passwordconfirm" type="password" id="inputPasswordConfirm" ng-required="!isEdit()" class="form-control"
+               ui-validate="'$value == user.password'" ui-validate-watch="'user.password'"
+               ng-attr-placeholder="{{ 'settings.user.edit.password_confirm' | translate }}" ng-model="user.passwordconfirm"/>
+      </div>
+
+      <div class="col-sm-3">
+        <span class="help-block" ng-show="editUserForm.passwordconfirm.$error.validator && editUserForm.$dirty">{{ 'validation.password_confirm' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group" ng-show="isEdit() && user.username != 'admin' && user.username != 'guest'">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox text-danger">
+          <label>
+            <input name="disabled" type="checkbox" ng-model="user.disabled" />
+            <strong>{{ 'settings.user.edit.disabled' | translate }}</strong>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary" ng-click="register()" ng-disabled="!editUserForm.$valid">
+          <span class="fas fa-pencil-alt"></span> {{  'save' | translate }}
+        </button>
+
+      </div>
+    </div>
+
+
+
+  </form>
+</div>
