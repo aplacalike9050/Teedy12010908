@@ -1,0 +1,21 @@
+<div class="guest-requests">
+    <h2>Guest Requests</h2>
+    <table class="table">
+        <thead>
+        <tr><th>ID</th><th>User</th><th>Email</th><th>Time</th><th>Status</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="req in requests">
+            <td>{{req.id}}</td>
+            <td>{{req.username}}</td>
+            <td>{{req.email}}</td>
+            <td>{{req.requestedAt}}</td>
+            <td>{{req.status}}</td>
+            <td>
+                <button ng-click="decide(req,true)" ng-disabled="req.status!=='PENDING'">Approve</button>
+                <button ng-click="decide(req,false)" ng-disabled="req.status!=='PENDING'">Reject</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

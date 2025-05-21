@@ -126,15 +126,43 @@
   </build>
 
   <reporting>
+
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.4.1</version>
       </plugin>
-    </plugins>
-  </reporting>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.11.2</version>
+        <configuration>
+            <doclint>none</doclint>
+            <failOnError>false</failOnError>
+        </configuration>
 
+        <reportSets>
+          <!-- 生成合并文档 -->
+          <reportSet>
+            <id>aggregate</id>
+            <inherited>false</inherited>
+            <reports>
+              <report>aggregate</report>
+            </reports>
+          </reportSet>
+          <!-- 生成各模块文档 -->
+          <reportSet>
+            <id>default</id>
+            <reports>
+              <report>javadoc</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+
+  </reporting>
 
   <modules>
     <module>docs-core</module>

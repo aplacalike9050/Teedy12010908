@@ -179,6 +179,7 @@
       <artifactId>levigo-jbig2-imageio</artifactId>
     </dependency>
 
+
     <!-- Only for connecting to PostgreSQL database -->
     <dependency>
       <groupId>org.postgresql</groupId>
