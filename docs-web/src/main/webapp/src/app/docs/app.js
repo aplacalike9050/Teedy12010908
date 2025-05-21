@@ -244,6 +244,16 @@ angular.module('docs',
         }
       }
     })
+//
+      .state('guestRequests', {
+        url: '/guest-requests',
+        views: {
+          'page': {
+            templateUrl: 'src/app/partial/admin/guestRequests.html',
+            controller: 'GuestRequestsController'
+          }
+        }
+      })
     .state('settings.ldap', {
       url: '/ldap',
       views: {
